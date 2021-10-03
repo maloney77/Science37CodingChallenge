@@ -97,7 +97,7 @@ output application/java
 		<choice doc:name="If any parameters are invalid" doc:id="5cc183f7-58a9-40b4-8110-49c2ecfabb01">
 			<when expression="#[sizeOf(vars.invalidParameters) != 0]">
 				<logger level="ERROR" doc:name="Log Bad Request" doc:id="a108ca0b-752c-4dab-9427-bc4d89ec7534" message="the incoming query parameters are invalid #[vars.invalidParameters]" />
-				<raise-error doc:name="Raise error INBOUNDPARAMETERS:BAD_REQUEST" doc:id="1b7f11ea-9d47-42fc-8f44-c2b7e6c26e9e" type="INBOUNDPARAMETERS:BAD_REQUEST" description="the incoming query parameters are invalid " />
+				<raise-error doc:name="Raise error INBOUNDPARAMETERS:BAD_REQUEST" doc:id="1b7f11ea-9d47-42fc-8f44-c2b7e6c26e9e" type="INBOUNDPARAMETERS:BAD_REQUEST" description="Some number of the incoming query parameters are invalid " />
 			</when>
 		</choice>
 	</sub-flow>

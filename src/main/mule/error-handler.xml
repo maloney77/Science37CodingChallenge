@@ -13,9 +13,10 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 {
-	message: if(vars.invalidParameters != [] and vars.invalidParameters != null)
+	message: error.description,
+	errorDetails: if(vars.invalidParameters != [] and vars.invalidParameters != null)
 	 vars.invalidParameters 
-	 else error.description,
+	 else [error.detailedDescription],
 	correlationId: correlationId
 }]]></ee:set-payload>
                     </ee:message>
