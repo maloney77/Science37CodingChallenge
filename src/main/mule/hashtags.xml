@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="hashtags-main" doc:id="47bbae12-c947-44ad-b30d-fb7cee7acbdd" >
+		<logger level="INFO" doc:name="Log request start time" doc:id="79fae744-0041-41b3-a7d2-e9a61805cc19" message='#["Received new hashtags request at " ++ now() &gt;&gt; "CST"]' />
+		<logger level="DEBUG" doc:name="DEBUG: Log incoming query parameters" doc:id="e70da57e-b58a-456f-9e51-83aef6978218" message="Incoming query parameters: #[vars.queryParams]" />
+		<http:request method="GET" doc:name="Request To Twitter For Tweets" doc:id="0045cd68-8a25-45ee-ab41-453f847fa1d5" config-ref="HTTPS_Twitter_Request_Config" path="${secure::twitter.api.path.searchTweets}">
+			<http:headers><![CDATA[#[output application/java
+---
+{
+	"Authorization" : "Bearer " ++ p('secure::twitter.api.authToken')
+}]]]></http:headers>
+			<http:query-params><![CDATA[#[output application/java
+---
+{
+	"q" : attributes.queryParams.searchCriteria,
+	"count": p('secure::api.parameters.tweetSearchLimit.hashtags'),
+	"result_type": p('secure::twitter.api.resultTypes.popular')
+}]]]></http:query-params>
+		</http:request>
+		<logger level="DEBUG" doc:name="DEBUG: Log response from twitter" doc:id="e0d739e0-8412-473d-bc93-04c80bf1842d" message="Response from twitter query: #[payload]" />
+		<ee:transform doc:name="extract hashtags and form response" doc:id="73c46499-58f8-4426-84d7-efc826b61aca" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	results: 
+	//grab the hashtags from the response objects and flatten them to one array
+	(flatten(payload.statuses.entities.hashtags).text 
+	
+	//get the distinct results
+	distinctBy ((hashtag, index) -> hashtag)) default []
+}
+
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Log end time" doc:id="c2f7d0e8-dbe0-442b-8d38-81bd00c63620" message='#["Successful call finished at " ++ now() &gt;&gt; "CST"]' />
+	</flow>
+</mule>

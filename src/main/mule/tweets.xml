@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	
+	<flow name="tweets-main" doc:id="cae696e6-c49d-4b7f-abe0-e87aa4efe7e9" >
+		<logger level="INFO" doc:name="Log request start time" doc:id="997b7c33-f139-4548-8022-954d5faf93f7" message='#["Received new tweets search request at " ++ now() &gt;&gt; "CST"]'/>
+		<set-variable value="#[attributes.queryParams]" doc:name="store queryParams" doc:id="21d999b8-2422-4af7-876f-44738e6095e5" variableName="queryParams"/>
+		<logger level="DEBUG" doc:name="DEBUG: Log incoming query parameters" doc:id="733041c6-91ee-4e7c-a457-3f3a01010ffb" message="Incoming query parameters: #[vars.queryParams]"/>
+		<http:request method="GET" doc:name="Request To Twitter For Tweets" doc:id="4621f401-f829-42c8-b2bf-efabb4cfa66c" config-ref="HTTPS_Twitter_Request_Config" path="${secure::twitter.api.path.searchTweets}">
+			<http:headers ><![CDATA[#[output application/java
+---
+{
+	"Authorization" : "Bearer " ++ p('secure::twitter.api.authToken')
+}]]]></http:headers>
+			<http:query-params ><![CDATA[#[output application/java
+---
+{
+	"q" : attributes.queryParams.searchCriteria
+}]]]></http:query-params>
+		</http:request>
+		<logger level="DEBUG" doc:name="DEBUG: Log response from twitter" doc:id="64620605-fe3b-40bb-90dd-e81b7c73e8b0" message="Response from twitter query: #[payload]"/>
+		<ee:transform doc:name="form response" doc:id="e8e30fd5-5039-402f-9528-d65cfa7b0e94" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+
+var twitterBaseUri = p('secure::twitter.api.tweet.baseUri')
+
+//build lower limit based on query parameter
+var lowerTimeLimit = (now() >> "GMT") - ("PT" ++ (vars.queryParams.timeLimit) as String ++ "H") as Period
+
+fun tweetIsWithinRange(inputDatetime) =
+//check if the input datetime is between lowerTimeLimit and now
+if(inputDatetime >= lowerTimeLimit and inputDatetime <= now()) true else false
+---
+
+
+{
+	results: ( (
+			payload.statuses 
+			//filter tweets by time
+			filter ((tweet, index) -> tweetIsWithinRange((tweet.created_at as DateTime {format: "EEE MMM dd HH:mm:ss Z yyyy"}) >> "GMT"))
+		) 
+		//limit the response to the number of tweets for the response
+		[1 to (vars.queryParams.resultSize default p('secure::api.parameters.tweetSearchLimit.tweets'))]
+		//build response body
+		map ((item, index) -> 
+		    {
+		      text: item.text default "",
+		      url: twitterBaseUri ++ (item.id_str default ""),
+		      authorScreenName: item.user.screen_name default ""
+		      //uncomment the below property to debug times in CST
+//		      , createdAt: item.created_at as DateTime {format: "EEE MMM dd HH:mm:ss Z yyyy"} >> "CST"
+		    }
+		)) default []
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Log end time" doc:id="22daffb9-e6d0-4a4a-9a9f-84969387a111" message='#["Successful call finished at " ++ now() &gt;&gt; "CST"]'/>
+	</flow>
+</mule>

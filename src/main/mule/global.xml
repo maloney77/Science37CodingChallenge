@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:secure-properties="http://www.mulesoft.org/schema/mule/secure-properties" xmlns:api-gateway="http://www.mulesoft.org/schema/mule/api-gateway"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd 
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/api-gateway http://www.mulesoft.org/schema/mule/api-gateway/current/mule-api-gateway.xsd
+http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/schema/mule/secure-properties/current/mule-secure-properties.xsd">
+	<api-gateway:autodiscovery apiId="${secure::api.id}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="43cb1deb-48d9-4c96-8cb0-2f08ba82fdfd" flowRef="social-media-twitter-tweet-management-system-main" />
+	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="039dd4eb-2186-4a67-9508-b4d3226db215" file="configs/${mule.env}.yaml" key="${mule.encrypt.key}" />
+	<http:listener-config name="social-media-twitter-tweet-management-system-httpListenerConfig">
+        <http:listener-connection host="0.0.0.0" port="${secure::api.port}" />
+    </http:listener-config>
+    <apikit:config name="social-media-twitter-tweet-management-system-config" api="social-media-twitter-tweet-management-system.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+    <http:request-config name="HTTPS_Twitter_Request_Config" doc:name="HTTP Request configuration" doc:id="5a0adc9d-fdbc-4c97-913e-2cc89460c2a2" basePath="${secure::twitter.api.basePath}" >
+		<http:request-connection protocol="HTTPS" host="${secure::twitter.api.host}" port="${secure::twitter.api.port}" />
+	</http:request-config>
+	<configuration doc:name="Configuration" doc:id="f8d47dd2-6c09-443f-a4fd-36c244a52db5" defaultErrorHandler-ref="global-error-handler" />
+</mule>
