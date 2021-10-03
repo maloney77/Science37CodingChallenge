@@ -1,7 +1,8 @@
+http:
+  port: "8081"
 api:
   id: "17316350"
   basePath: "/api/twitter/v1"
-  port: "8081"
   
   parameters:
     tweetSearchLimit:

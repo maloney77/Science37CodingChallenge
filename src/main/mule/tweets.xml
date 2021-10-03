@@ -9,6 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="tweets-main" doc:id="cae696e6-c49d-4b7f-abe0-e87aa4efe7e9" >
 		<logger level="INFO" doc:name="Log request start time" doc:id="997b7c33-f139-4548-8022-954d5faf93f7" message='#["Received new tweets search request at " ++ now() &gt;&gt; "CST"]'/>
 		<set-variable value="#[attributes.queryParams]" doc:name="store queryParams" doc:id="21d999b8-2422-4af7-876f-44738e6095e5" variableName="queryParams"/>
+		<flow-ref doc:name="validate-query-parameters" doc:id="2727c77b-4744-4acf-8fd6-14e2bf5b6c7f" name="validate-query-parameters"/>
 		<logger level="DEBUG" doc:name="DEBUG: Log incoming query parameters" doc:id="733041c6-91ee-4e7c-a457-3f3a01010ffb" message="Incoming query parameters: #[vars.queryParams]"/>
 		<http:request method="GET" doc:name="Request To Twitter For Tweets" doc:id="4621f401-f829-42c8-b2bf-efabb4cfa66c" config-ref="HTTPS_Twitter_Request_Config" path="${secure::twitter.api.path.searchTweets}">
 			<http:headers ><![CDATA[#[output application/java
@@ -35,7 +36,7 @@ var lowerTimeLimit = (now() >> "GMT") - ("PT" ++ (vars.queryParams.timeLimit) as
 
 fun tweetIsWithinRange(inputDatetime) =
 //check if the input datetime is between lowerTimeLimit and now
-if(inputDatetime >= lowerTimeLimit and inputDatetime <= now()) true else false
+if(inputDatetime >= lowerTimeLimit and inputDatetime <= (now() >> "GMT")) true else false
 ---
 
 
@@ -45,7 +46,7 @@ if(inputDatetime >= lowerTimeLimit and inputDatetime <= now()) true else false
 			//filter tweets by time
 			filter ((tweet, index) -> tweetIsWithinRange((tweet.created_at as DateTime {format: "EEE MMM dd HH:mm:ss Z yyyy"}) >> "GMT"))
 		) 
-		//limit the response to the number of tweets for the response
+		//limit the result to the number of tweets for the response
 		[1 to (vars.queryParams.resultSize default p('secure::api.parameters.tweetSearchLimit.tweets'))]
 		//build response body
 		map ((item, index) -> 
@@ -62,4 +63,42 @@ if(inputDatetime >= lowerTimeLimit and inputDatetime <= now()) true else false
 		</ee:transform>
 		<logger level="INFO" doc:name="Log end time" doc:id="22daffb9-e6d0-4a4a-9a9f-84969387a111" message='#["Successful call finished at " ++ now() &gt;&gt; "CST"]'/>
 	</flow>
+	<sub-flow name="validate-query-parameters" doc:id="f3f86328-6832-4791-8d1d-2b687c5a0678" >
+		<ee:transform doc:name="set parametersAreValid" doc:id="97b69a7f-f83e-478d-9e64-38c8e1bca605" >
+			<ee:message >
+			</ee:message>
+			<ee:variables >
+				<ee:set-variable variableName="invalidParameters" ><![CDATA[%dw 2.0
+output application/java
+
+
+---
+([] + //check if resultSize is less than the maximum limit
+(
+	if((vars.queryParams.resultSize default 0) as Number > p('secure::api.parameters.tweetSearchLimit.tweets') as Number)
+		("resultSize cannot be greater than " ++ p('secure::api.parameters.tweetSearchLimit.tweets'))
+	else null
+) + //check if searchCriteria is not an empty string
+(
+	if(vars.queryParams.searchCriteria == "")
+		"searchCriteria cannot be blank"
+	else null
+) + //check if timeLimit is greater than 0
+(
+	if(vars.queryParams.timeLimit <= 0)
+		"timeLimit must be greater than 0"
+	else null
+)) filter ((item, index) -> item != null)
+
+
+]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<choice doc:name="If any parameters are invalid" doc:id="5cc183f7-58a9-40b4-8110-49c2ecfabb01">
+			<when expression="#[sizeOf(vars.invalidParameters) != 0]">
+				<logger level="ERROR" doc:name="Log Bad Request" doc:id="a108ca0b-752c-4dab-9427-bc4d89ec7534" message="the incoming query parameters are invalid #[vars.invalidParameters]" />
+				<raise-error doc:name="Raise error INBOUNDPARAMETERS:BAD_REQUEST" doc:id="1b7f11ea-9d47-42fc-8f44-c2b7e6c26e9e" type="INBOUNDPARAMETERS:BAD_REQUEST" description="the incoming query parameters are invalid " />
+			</when>
+		</choice>
+	</sub-flow>
 </mule>

@@ -6,14 +6,16 @@
 	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
 	<error-handler name="global-error-handler" doc:id="d4a14a10-31f6-4d41-858f-c65515b679d0" >
-		<on-error-propagate type="APIKIT:BAD_REQUEST">
+		<on-error-propagate type="APIKIT:BAD_REQUEST, INBOUNDPARAMETERS:BAD_REQUEST" enableNotifications="true" logException="true">
                 <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
                     <ee:message>
                         <ee:set-payload><![CDATA[%dw 2.0
 output application/json
 ---
 {
-	message: error.description,
+	message: if(vars.invalidParameters != [] and vars.invalidParameters != null)
+	 vars.invalidParameters 
+	 else error.description,
 	correlationId: correlationId
 }]]></ee:set-payload>
                     </ee:message>

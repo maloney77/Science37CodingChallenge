@@ -30,13 +30,13 @@ traits:
           example: "Chicago Bears"
 
         timeLimit:
-          type: number
+          type: integer
           description: The timeLimit parameter filters the search so that only tweets that have been created in the past {timeLimit} hours are returned.\
           required: true
           example: 5
         
         resultSize:
-          type: number
+          type: integer
           description: The resultSize parameter limits the number of tweets that are returned in the response. This parameter has a maximum of 10 and defaults to the maximum if not given.
           required: false
           example: 10

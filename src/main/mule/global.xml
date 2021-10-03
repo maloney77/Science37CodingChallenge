@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/sc
 	<api-gateway:autodiscovery apiId="${secure::api.id}" ignoreBasePath="true" doc:name="API Autodiscovery" doc:id="43cb1deb-48d9-4c96-8cb0-2f08ba82fdfd" flowRef="social-media-twitter-tweet-management-system-main" />
 	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="039dd4eb-2186-4a67-9508-b4d3226db215" file="configs/${mule.env}.yaml" key="${mule.encrypt.key}" />
 	<http:listener-config name="social-media-twitter-tweet-management-system-httpListenerConfig">
-        <http:listener-connection host="0.0.0.0" port="${secure::api.port}" />
+        <http:listener-connection host="0.0.0.0" port="${secure::http.port}" />
     </http:listener-config>
     <apikit:config name="social-media-twitter-tweet-management-system-config" api="social-media-twitter-tweet-management-system.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
     <http:request-config name="HTTPS_Twitter_Request_Config" doc:name="HTTP Request configuration" doc:id="5a0adc9d-fdbc-4c97-913e-2cc89460c2a2" basePath="${secure::twitter.api.basePath}" >
