@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd 
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+		<http:request-config name="Test2_HTTP_Request_Configuration" basePath="${secure::api.basePath}">
+        <http:request-connection host="localhost" port="8081" />
+    </http:request-config>
+	<munit:config name="parameterized-tests.xml" >
+		
+
+	
+	</munit:config>
+	
+	
+	<munit:test name="blank-search-criteria-just-space-character" doc:id="eb703ada-eed1-484e-8123-2d2b4875d69b" description="When the api is given just a space for the search criteria, it should throw a custom error" expectedErrorType="INBOUNDPARAMETERS:BAD_REQUEST" expectedErrorDescription="searchCriteria must contain at least one alpha numeric character">
+			
+		<munit:enable-flow-sources>
+				
+				<munit:enable-flow-source value="get:\tweets:social-media-twitter-tweet-management-system-config" />
+				
+			<munit:enable-flow-source value="social-media-twitter-tweet-management-system-main" />
+			</munit:enable-flow-sources>
+		<munit:execution>
+			<munit:set-event doc:name="Set Event" doc:id="448dccac-6b73-4813-aba4-d943f9034220" >
+				<munit:attributes value='{"queryParams": {"searchCriteria":" ", "timeLimit": "1"}}' mediaType="application/json" />
+			</munit:set-event>
+			<flow-ref doc:name="tweets-main" doc:id="16e1ac17-1714-476e-9649-99584147fa22" name="tweets-main"/>
+		
+</munit:execution>
+		
+</munit:test>
+<munit:test name="zero-result-size" doc:id="60c6ba43-5563-42a7-a2e9-1232b6e22459" description="When the api is given 0 as the result size, , it should throw a custom error" expectedErrorType="INBOUNDPARAMETERS:BAD_REQUEST" expectedErrorDescription="resultSize must be greater than 0 and less than 10">
+			
+		<munit:enable-flow-sources>
+				
+				<munit:enable-flow-source value="get:\tweets:social-media-twitter-tweet-management-system-config" />
+				
+			<munit:enable-flow-source value="social-media-twitter-tweet-management-system-main" />
+			</munit:enable-flow-sources>
+		<munit:execution>
+			<munit:set-event doc:name="Set Event" doc:id="8b75d72c-49b7-492b-bcc3-64bcd6146a4c" >
+				<munit:attributes value='{"queryParams": {"searchCriteria":"Chicago", "timeLimit": "1", "resultSize": "0"}}' mediaType="application/json" />
+			</munit:set-event>
+			<flow-ref doc:name="tweets-main" doc:id="f2ebdf58-6a91-41f3-a3a0-843c85ca95e7" name="tweets-main"/>
+		
+</munit:execution>
+		
+</munit:test>
+<munit:test name="negative-result-size" doc:id="c3b763d1-be56-473c-afe1-cf294e47cd30" description="When the api is given a negative result size, it should throw a custom error" expectedErrorType="INBOUNDPARAMETERS:BAD_REQUEST" expectedErrorDescription="resultSize must be greater than 0 and less than 10">
+			
+		<munit:enable-flow-sources>
+				
+				<munit:enable-flow-source value="get:\tweets:social-media-twitter-tweet-management-system-config" />
+				
+			<munit:enable-flow-source value="social-media-twitter-tweet-management-system-main" />
+			</munit:enable-flow-sources>
+		<munit:execution>
+			<munit:set-event doc:name="Set Event" doc:id="675de8e0-4c33-4a8d-a8fc-c2167e310e16" >
+				<munit:attributes value='{"queryParams": {"searchCriteria":"Chicago", "timeLimit": "1", "resultSize": "-1"}}' mediaType="application/json" />
+			</munit:set-event>
+			<flow-ref doc:name="tweets-main" doc:id="661821aa-3943-493a-86a5-f32c0cc01510" name="tweets-main"/>
+		
+</munit:execution>
+		
+</munit:test>
+<munit:test name="zero-time-limit" doc:id="b298d443-9673-4e5f-b28c-3b7a56cf3763" description="When the api is called with 0 as the time limit parameter, it should throw a custom error" expectedErrorType="INBOUNDPARAMETERS:BAD_REQUEST" expectedErrorDescription="timeLimit must be greater than 0">
+			
+		<munit:enable-flow-sources>
+				
+				<munit:enable-flow-source value="get:\tweets:social-media-twitter-tweet-management-system-config" />
+				
+			<munit:enable-flow-source value="social-media-twitter-tweet-management-system-main" />
+			</munit:enable-flow-sources>
+		<munit:execution>
+			<munit:set-event doc:name="Set Event" doc:id="5bf265d8-a5e4-4596-ae43-875558030544" >
+				<munit:attributes value='{"queryParams": {"searchCriteria":"Chicago", "timeLimit": "0"}}' mediaType="application/json" />
+			</munit:set-event>
+			<flow-ref doc:name="tweets-main" doc:id="0ed53230-f425-457c-af9e-d8ec82368186" name="tweets-main"/>
+		
+</munit:execution>
+		
+</munit:test>
+<munit:test name="negative-time-limit" doc:id="28330eeb-74c9-4c3f-b863-202ffdf9b6fa" description="When a negative time limit is sent in as a parameter, it should throw a custom error" expectedErrorType="INBOUNDPARAMETERS:BAD_REQUEST" expectedErrorDescription="timeLimit must be greater than 0">
+			
+		<munit:enable-flow-sources>
+				
+				<munit:enable-flow-source value="get:\tweets:social-media-twitter-tweet-management-system-config" />
+				
+			<munit:enable-flow-source value="social-media-twitter-tweet-management-system-main" />
+			</munit:enable-flow-sources>
+		<munit:execution>
+			<munit:set-event doc:name="Set Event" doc:id="b1f168b9-755a-4fa9-afd7-ff05995a412d" >
+				<munit:attributes value='{"queryParams": {"searchCriteria":"Chicago", "timeLimit": "-1"}}' mediaType="application/json" />
+			</munit:set-event>
+			<flow-ref doc:name="tweets-main" doc:id="6f327849-20ff-4e93-8750-e119281a89a2" name="tweets-main"/>
+		
+</munit:execution>
+		
+</munit:test>
+
+<munit:test name="hashtags-blank-search-criteria-just-space-character" doc:id="52f2c266-542c-4173-9005-20dfeb2c55d5" description="When a blank search criteria parameter is sent into the hashtags endpoint, it should throw a custom error" expectedErrorType="INBOUNDPARAMETERS:BAD_REQUEST" expectedErrorDescription="searchCriteria must contain at least one alpha numeric character">
+			
+		<munit:enable-flow-sources>
+				
+				<munit:enable-flow-source value="get:\tweets\popular\hashtags:social-media-twitter-tweet-management-system-config" />
+				
+			<munit:enable-flow-source value="social-media-twitter-tweet-management-system-main" />
+			</munit:enable-flow-sources>
+		<munit:execution>
+			<munit:set-event doc:name="Set Event" doc:id="532e6dea-0f32-4029-9a0f-623978778f40" >
+				<munit:attributes value='{"queryParams": {"searchCriteria":" ", "timeLimit": "1"}}' mediaType="application/json" />
+			</munit:set-event>
+			<flow-ref doc:name="hashtags-main" doc:id="5e1d5cee-3aa6-4830-a0c8-cfc6fe27d0d8" name="hashtags-main"/>
+		
+</munit:execution>
+</munit:test>
+</mule>

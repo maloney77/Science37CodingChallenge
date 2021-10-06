@@ -13,10 +13,8 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 {
-	message: error.description,
-	errorDetails: if(vars.invalidParameters != [] and vars.invalidParameters != null)
-	 vars.invalidParameters 
-	 else [error.detailedDescription],
+	errorDescription: error.description,
+	errorCode: error.errorType.asString,
 	correlationId: correlationId
 }]]></ee:set-payload>
                     </ee:message>
@@ -32,7 +30,8 @@ output application/json
 output application/json
 ---
 {
-	message: error.description,
+	errorDescription: error.description,
+	errorCode: error.errorType.asString,
 	correlationId: correlationId
 }]]></ee:set-payload>
                     </ee:message>
@@ -48,7 +47,8 @@ output application/json
 output application/json
 ---
 {
-	message: error.description,
+	errorDescription: error.description,
+	errorCode: error.errorType.asString,
 	correlationId: correlationId
 }]]></ee:set-payload>
                     </ee:message>
@@ -64,7 +64,8 @@ output application/json
 output application/json
 ---
 {
-	message: error.description,
+	errorDescription: error.description,
+	errorCode: error.errorType.asString,
 	correlationId: correlationId
 }]]></ee:set-payload>
                     </ee:message>
@@ -80,7 +81,8 @@ output application/json
 output application/json
 ---
 {
-	message: error.description,
+	errorDescription: error.description,
+	errorCode: error.errorType.asString,
 	correlationId: correlationId
 }]]></ee:set-payload>
                     </ee:message>
@@ -96,7 +98,8 @@ output application/json
 output application/json
 ---
 {
-	message: error.description,
+	errorDescription: error.description,
+	errorCode: error.errorType.asString,
 	correlationId: correlationId
 }]]></ee:set-payload>
                     </ee:message>
@@ -107,16 +110,24 @@ output application/json
             </on-error-propagate>
 		<on-error-propagate enableNotifications="true" logException="true" doc:name="On Error Propagate - Default" doc:id="dd75a6b0-c25a-40bd-83ca-685a3b27ff77" type="ANY">
 			<logger level="ERROR" doc:name="Log Error" doc:id="c5e09be0-c0e4-4958-8428-c6d0461d7a03" message="Unexpected error occurred: #[error.description]"/>
-			<ee:transform doc:name="Build Default Error Response" doc:id="03d8ed22-d896-4743-8386-bf05af8e4e49" >
+			<ee:transform doc:name="Build Default Error Response and httpStatus" doc:id="03d8ed22-d896-4743-8386-bf05af8e4e49" >
 				<ee:message >
 					<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
 {
-	message: "An unexpected error occurred, please give this correlationId to your API provider.",
+	errorDescription: "An unexpected error occurred, please give this correlationId to your API provider.",
+	errorCode: error.errorType.asString,
 	correlationId: correlationId
-}]]></ee:set-payload>
+}
+]]></ee:set-payload>
 				</ee:message>
+				<ee:variables >
+					<ee:set-variable variableName="httpStatus" ><![CDATA[%dw 2.0
+output application/java
+---
+500]]></ee:set-variable>
+				</ee:variables>
 			</ee:transform>
 		</on-error-propagate>
 	

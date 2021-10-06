@@ -1,0 +1,24 @@
+http:
+  port: "8081"
+api:
+  id: "17316350"
+  basePath: "/api/twitter/v1"
+  
+  parameters:
+    tweetSearchLimit:
+      tweets: "10"
+      hashtags: "10"
+  
+twitter:
+  api:
+    authToken: "![vSi5gQrNYvJdFrKtzwu2yz8415LUTnjrrd3yQD15OOEAcIDUH0wcEi/FuH09udUdQYxWzBOj2l04Ju+PSBPyq3JH4nSpLjioqaVKJHT/ZTaPybjZEMDYb6kzQ9eyp9+LKF3YseyfOgDl0OVLk4fPSMxjCa6jcvuiqxYqooY/aaQ=]"
+    host: "api.twitter.com"
+    port: "443"
+    basePath: "/1.1/search"
+    path:
+      searchTweets: "/tweets.json"
+    resultTypes:
+      popular: "popular"
+    tweet:
+      baseUri: "https://twitter.com/i/web/status/"
+    

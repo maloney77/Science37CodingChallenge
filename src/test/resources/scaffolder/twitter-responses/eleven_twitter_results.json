@@ -1,0 +1,2800 @@
+{
+    "statuses": [
+        {
+            "created_at": "Wed Oct 06 20:50:52 +0000 2021",
+            "id": 1445854090219728896,
+            "id_str": "1445854090219728896",
+            "text": "RT @SeriesUpdateFR: Le 3ème film \"La Princesse de Chicago\" avec Vanessa Hudgens sortira le 18 novembre sur Netflix.❄️\n\n(via @Variety) https…",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "SeriesUpdateFR",
+                        "name": "Infos Séries",
+                        "id": 817437085191827456,
+                        "id_str": "817437085191827456",
+                        "indices": [
+                            3,
+                            18
+                        ]
+                    },
+                    {
+                        "screen_name": "Variety",
+                        "name": "Variety",
+                        "id": 17525171,
+                        "id_str": "17525171",
+                        "indices": [
+                            124,
+                            132
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "fr",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 766252818,
+                "id_str": "766252818",
+                "name": "Never Give Up",
+                "screen_name": "Pedro_Juaniito",
+                "location": "",
+                "description": "Gwada Martiniquais",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 1369,
+                "friends_count": 1106,
+                "listed_count": 29,
+                "created_at": "Sat Aug 18 19:28:38 +0000 2012",
+                "favourites_count": 181470,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 219137,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "9AE4E8",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme16/bg.gif",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme16/bg.gif",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1225725925897187328/0Tsxie4o_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1225725925897187328/0Tsxie4o_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/766252818/1581070875",
+                "profile_link_color": "0084B4",
+                "profile_sidebar_border_color": "BDDCAD",
+                "profile_sidebar_fill_color": "DDFFCC",
+                "profile_text_color": "333333",
+                "profile_use_background_image": false,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "regular",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Wed Oct 06 17:17:27 +0000 2021",
+                "id": 1445800382219931653,
+                "id_str": "1445800382219931653",
+                "text": "Le 3ème film \"La Princesse de Chicago\" avec Vanessa Hudgens sortira le 18 novembre sur Netflix.❄️\n\n(via @Variety) https://t.co/87ixwLqMec",
+                "truncated": false,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [
+                        {
+                            "screen_name": "Variety",
+                            "name": "Variety",
+                            "id": 17525171,
+                            "id_str": "17525171",
+                            "indices": [
+                                104,
+                                112
+                            ]
+                        }
+                    ],
+                    "urls": [],
+                    "media": [
+                        {
+                            "id": 1445800337189875712,
+                            "id_str": "1445800337189875712",
+                            "indices": [
+                                114,
+                                137
+                            ],
+                            "media_url": "http://pbs.twimg.com/media/FBCDvxpXsAAPcgo.png",
+                            "media_url_https": "https://pbs.twimg.com/media/FBCDvxpXsAAPcgo.png",
+                            "url": "https://t.co/87ixwLqMec",
+                            "display_url": "pic.twitter.com/87ixwLqMec",
+                            "expanded_url": "https://twitter.com/SeriesUpdateFR/status/1445800382219931653/photo/1",
+                            "type": "photo",
+                            "sizes": {
+                                "large": {
+                                    "w": 684,
+                                    "h": 385,
+                                    "resize": "fit"
+                                },
+                                "medium": {
+                                    "w": 684,
+                                    "h": 385,
+                                    "resize": "fit"
+                                },
+                                "small": {
+                                    "w": 680,
+                                    "h": 383,
+                                    "resize": "fit"
+                                },
+                                "thumb": {
+                                    "w": 150,
+                                    "h": 150,
+                                    "resize": "crop"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "extended_entities": {
+                    "media": [
+                        {
+                            "id": 1445800337189875712,
+                            "id_str": "1445800337189875712",
+                            "indices": [
+                                114,
+                                137
+                            ],
+                            "media_url": "http://pbs.twimg.com/media/FBCDvxpXsAAPcgo.png",
+                            "media_url_https": "https://pbs.twimg.com/media/FBCDvxpXsAAPcgo.png",
+                            "url": "https://t.co/87ixwLqMec",
+                            "display_url": "pic.twitter.com/87ixwLqMec",
+                            "expanded_url": "https://twitter.com/SeriesUpdateFR/status/1445800382219931653/photo/1",
+                            "type": "photo",
+                            "sizes": {
+                                "large": {
+                                    "w": 684,
+                                    "h": 385,
+                                    "resize": "fit"
+                                },
+                                "medium": {
+                                    "w": 684,
+                                    "h": 385,
+                                    "resize": "fit"
+                                },
+                                "small": {
+                                    "w": 680,
+                                    "h": 383,
+                                    "resize": "fit"
+                                },
+                                "thumb": {
+                                    "w": 150,
+                                    "h": 150,
+                                    "resize": "crop"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "fr",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 817437085191827456,
+                    "id_str": "817437085191827456",
+                    "name": "Infos Séries",
+                    "screen_name": "SeriesUpdateFR",
+                    "location": "",
+                    "description": "Bienvenue sur votre premier compte source français sur toutes vos séries, films et plateformes de streaming préférées. 📧: seriesupdatefr@gmail.com",
+                    "url": "https://t.co/IEOsKvLPhY",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/IEOsKvLPhY",
+                                    "expanded_url": "http://instagram.com/seriesupdatefr/",
+                                    "display_url": "instagram.com/seriesupdatefr/",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 130287,
+                    "friends_count": 738,
+                    "listed_count": 195,
+                    "created_at": "Fri Jan 06 18:26:03 +0000 2017",
+                    "favourites_count": 16115,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": false,
+                    "statuses_count": 12070,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "F5F8FA",
+                    "profile_background_image_url": null,
+                    "profile_background_image_url_https": null,
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/886590799949045761/zbtPdFT1_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/886590799949045761/zbtPdFT1_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/817437085191827456/1500215464",
+                    "profile_link_color": "1DA1F2",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": true,
+                    "default_profile": true,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 191,
+                "favorite_count": 923,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "fr"
+            },
+            "is_quote_status": false,
+            "retweet_count": 191,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "fr"
+        },
+        {
+            "created_at": "Wed Oct 06 20:50:49 +0000 2021",
+            "id": 1445854075883507719,
+            "id_str": "1445854075883507719",
+            "text": "RT @NBCSBears: CHICAGO RIGHT NOW\n\nJustin Fields is QB1! https://t.co/mD0Iw21gZc",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "NBCSBears",
+                        "name": "Bears Talk",
+                        "id": 423536031,
+                        "id_str": "423536031",
+                        "indices": [
+                            3,
+                            13
+                        ]
+                    }
+                ],
+                "urls": [],
+                "media": [
+                    {
+                        "id": 1445805767865495560,
+                        "id_str": "1445805767865495560",
+                        "indices": [
+                            56,
+                            79
+                        ],
+                        "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                        "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                        "url": "https://t.co/mD0Iw21gZc",
+                        "display_url": "pic.twitter.com/mD0Iw21gZc",
+                        "expanded_url": "https://twitter.com/NBCSBears/status/1445805970995744768/video/1",
+                        "type": "photo",
+                        "sizes": {
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "medium": {
+                                "w": 1200,
+                                "h": 675,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 680,
+                                "h": 383,
+                                "resize": "fit"
+                            },
+                            "large": {
+                                "w": 1280,
+                                "h": 720,
+                                "resize": "fit"
+                            }
+                        },
+                        "source_status_id": 1445805970995744768,
+                        "source_status_id_str": "1445805970995744768",
+                        "source_user_id": 423536031,
+                        "source_user_id_str": "423536031"
+                    }
+                ]
+            },
+            "extended_entities": {
+                "media": [
+                    {
+                        "id": 1445805767865495560,
+                        "id_str": "1445805767865495560",
+                        "indices": [
+                            56,
+                            79
+                        ],
+                        "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                        "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                        "url": "https://t.co/mD0Iw21gZc",
+                        "display_url": "pic.twitter.com/mD0Iw21gZc",
+                        "expanded_url": "https://twitter.com/NBCSBears/status/1445805970995744768/video/1",
+                        "type": "video",
+                        "sizes": {
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "medium": {
+                                "w": 1200,
+                                "h": 675,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 680,
+                                "h": 383,
+                                "resize": "fit"
+                            },
+                            "large": {
+                                "w": 1280,
+                                "h": 720,
+                                "resize": "fit"
+                            }
+                        },
+                        "source_status_id": 1445805970995744768,
+                        "source_status_id_str": "1445805970995744768",
+                        "source_user_id": 423536031,
+                        "source_user_id_str": "423536031",
+                        "video_info": {
+                            "aspect_ratio": [
+                                16,
+                                9
+                            ],
+                            "duration_millis": 9133,
+                            "variants": [
+                                {
+                                    "bitrate": 2176000,
+                                    "content_type": "video/mp4",
+                                    "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/1280x720/uS4vs7mgdUEiqpGC.mp4?tag=12"
+                                },
+                                {
+                                    "bitrate": 256000,
+                                    "content_type": "video/mp4",
+                                    "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/480x270/xY76lwowwSvZIcDS.mp4?tag=12"
+                                },
+                                {
+                                    "content_type": "application/x-mpegURL",
+                                    "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/pl/CJHaBHYm4-CpJIAM.m3u8?tag=12"
+                                },
+                                {
+                                    "bitrate": 832000,
+                                    "content_type": "video/mp4",
+                                    "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/640x360/t4RtVU1VXK9RkQ-E.mp4?tag=12"
+                                }
+                            ]
+                        },
+                        "additional_media_info": {
+                            "monetizable": false,
+                            "source_user": {
+                                "id": 423536031,
+                                "id_str": "423536031",
+                                "name": "Bears Talk",
+                                "screen_name": "NBCSBears",
+                                "location": "",
+                                "description": "Justin Fields Talk",
+                                "url": "https://t.co/K2g6aTtCN9",
+                                "entities": {
+                                    "url": {
+                                        "urls": [
+                                            {
+                                                "url": "https://t.co/K2g6aTtCN9",
+                                                "expanded_url": "http://nbcsportschicago.com/bears",
+                                                "display_url": "nbcsportschicago.com/bears",
+                                                "indices": [
+                                                    0,
+                                                    23
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "description": {
+                                        "urls": []
+                                    }
+                                },
+                                "protected": false,
+                                "followers_count": 44486,
+                                "friends_count": 162,
+                                "listed_count": 617,
+                                "created_at": "Mon Nov 28 16:42:41 +0000 2011",
+                                "favourites_count": 964,
+                                "utc_offset": null,
+                                "time_zone": null,
+                                "geo_enabled": false,
+                                "verified": true,
+                                "statuses_count": 30529,
+                                "lang": null,
+                                "contributors_enabled": false,
+                                "is_translator": false,
+                                "is_translation_enabled": false,
+                                "profile_background_color": "C0DEED",
+                                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                                "profile_background_tile": true,
+                                "profile_image_url": "http://pbs.twimg.com/profile_images/1388189746111909889/t-lMKudq_normal.jpg",
+                                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1388189746111909889/t-lMKudq_normal.jpg",
+                                "profile_banner_url": "https://pbs.twimg.com/profile_banners/423536031/1615929921",
+                                "profile_link_color": "0084B4",
+                                "profile_sidebar_border_color": "C0DEED",
+                                "profile_sidebar_fill_color": "DDEEF6",
+                                "profile_text_color": "333333",
+                                "profile_use_background_image": true,
+                                "has_extended_profile": false,
+                                "default_profile": false,
+                                "default_profile_image": false,
+                                "following": null,
+                                "follow_request_sent": null,
+                                "notifications": null,
+                                "translator_type": "none",
+                                "withheld_in_countries": []
+                            }
+                        }
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 1232002525265571840,
+                "id_str": "1232002525265571840",
+                "name": "Schmanky",
+                "screen_name": "james_manker",
+                "location": "",
+                "description": "@baseballnchs",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 29,
+                "friends_count": 209,
+                "listed_count": 0,
+                "created_at": "Mon Feb 24 18:01:24 +0000 2020",
+                "favourites_count": 6058,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 723,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1393009686073458693/0xLGYCyv_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1393009686073458693/0xLGYCyv_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/1232002525265571840/1632684316",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Wed Oct 06 17:39:39 +0000 2021",
+                "id": 1445805970995744768,
+                "id_str": "1445805970995744768",
+                "text": "CHICAGO RIGHT NOW\n\nJustin Fields is QB1! https://t.co/mD0Iw21gZc",
+                "truncated": false,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [],
+                    "media": [
+                        {
+                            "id": 1445805767865495560,
+                            "id_str": "1445805767865495560",
+                            "indices": [
+                                41,
+                                64
+                            ],
+                            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                            "url": "https://t.co/mD0Iw21gZc",
+                            "display_url": "pic.twitter.com/mD0Iw21gZc",
+                            "expanded_url": "https://twitter.com/NBCSBears/status/1445805970995744768/video/1",
+                            "type": "photo",
+                            "sizes": {
+                                "thumb": {
+                                    "w": 150,
+                                    "h": 150,
+                                    "resize": "crop"
+                                },
+                                "medium": {
+                                    "w": 1200,
+                                    "h": 675,
+                                    "resize": "fit"
+                                },
+                                "small": {
+                                    "w": 680,
+                                    "h": 383,
+                                    "resize": "fit"
+                                },
+                                "large": {
+                                    "w": 1280,
+                                    "h": 720,
+                                    "resize": "fit"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "extended_entities": {
+                    "media": [
+                        {
+                            "id": 1445805767865495560,
+                            "id_str": "1445805767865495560",
+                            "indices": [
+                                41,
+                                64
+                            ],
+                            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                            "url": "https://t.co/mD0Iw21gZc",
+                            "display_url": "pic.twitter.com/mD0Iw21gZc",
+                            "expanded_url": "https://twitter.com/NBCSBears/status/1445805970995744768/video/1",
+                            "type": "video",
+                            "sizes": {
+                                "thumb": {
+                                    "w": 150,
+                                    "h": 150,
+                                    "resize": "crop"
+                                },
+                                "medium": {
+                                    "w": 1200,
+                                    "h": 675,
+                                    "resize": "fit"
+                                },
+                                "small": {
+                                    "w": 680,
+                                    "h": 383,
+                                    "resize": "fit"
+                                },
+                                "large": {
+                                    "w": 1280,
+                                    "h": 720,
+                                    "resize": "fit"
+                                }
+                            },
+                            "video_info": {
+                                "aspect_ratio": [
+                                    16,
+                                    9
+                                ],
+                                "duration_millis": 9133,
+                                "variants": [
+                                    {
+                                        "bitrate": 2176000,
+                                        "content_type": "video/mp4",
+                                        "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/1280x720/uS4vs7mgdUEiqpGC.mp4?tag=12"
+                                    },
+                                    {
+                                        "bitrate": 256000,
+                                        "content_type": "video/mp4",
+                                        "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/480x270/xY76lwowwSvZIcDS.mp4?tag=12"
+                                    },
+                                    {
+                                        "content_type": "application/x-mpegURL",
+                                        "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/pl/CJHaBHYm4-CpJIAM.m3u8?tag=12"
+                                    },
+                                    {
+                                        "bitrate": 832000,
+                                        "content_type": "video/mp4",
+                                        "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/640x360/t4RtVU1VXK9RkQ-E.mp4?tag=12"
+                                    }
+                                ]
+                            },
+                            "additional_media_info": {
+                                "monetizable": false
+                            }
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "en",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 423536031,
+                    "id_str": "423536031",
+                    "name": "Bears Talk",
+                    "screen_name": "NBCSBears",
+                    "location": "",
+                    "description": "Justin Fields Talk",
+                    "url": "https://t.co/K2g6aTtCN9",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/K2g6aTtCN9",
+                                    "expanded_url": "http://nbcsportschicago.com/bears",
+                                    "display_url": "nbcsportschicago.com/bears",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 44486,
+                    "friends_count": 162,
+                    "listed_count": 617,
+                    "created_at": "Mon Nov 28 16:42:41 +0000 2011",
+                    "favourites_count": 964,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": true,
+                    "statuses_count": 30529,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "C0DEED",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_tile": true,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1388189746111909889/t-lMKudq_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1388189746111909889/t-lMKudq_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/423536031/1615929921",
+                    "profile_link_color": "0084B4",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": false,
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 1802,
+                "favorite_count": 6040,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "en"
+            },
+            "is_quote_status": false,
+            "retweet_count": 1802,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": true,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Oct 06 20:50:47 +0000 2021",
+            "id": 1445854070514851840,
+            "id_str": "1445854070514851840",
+            "text": "RT @AdamSchefter: Bears’ HC Matt Nagy announces that, going forward, Justin Fields is Chicago’s starting QB.",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "AdamSchefter",
+                        "name": "Adam Schefter",
+                        "id": 51263592,
+                        "id_str": "51263592",
+                        "indices": [
+                            3,
+                            16
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 2905679747,
+                "id_str": "2905679747",
+                "name": "John Ahern",
+                "screen_name": "ahern_johnmort",
+                "location": "",
+                "description": "",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 89,
+                "friends_count": 1170,
+                "listed_count": 1,
+                "created_at": "Thu Dec 04 22:16:49 +0000 2014",
+                "favourites_count": 6962,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 43617,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/540642088807698432/PBX6Whfy_normal.png",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/540642088807698432/PBX6Whfy_normal.png",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2905679747/1463054737",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Wed Oct 06 16:58:43 +0000 2021",
+                "id": 1445795669285892098,
+                "id_str": "1445795669285892098",
+                "text": "Bears’ HC Matt Nagy announces that, going forward, Justin Fields is Chicago’s starting QB.",
+                "truncated": false,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": []
+                },
+                "metadata": {
+                    "iso_language_code": "en",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 51263592,
+                    "id_str": "51263592",
+                    "name": "Adam Schefter",
+                    "screen_name": "AdamSchefter",
+                    "location": "New York",
+                    "description": "ESPN Senior NFL Insider. \nInterview & Podcast Requests: ESPNPR@espn.com\nHost of the Adam Schefter Podcast\nhttps://t.co/oz43ix5jZU",
+                    "url": "https://t.co/OUz4GsIjV2",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/OUz4GsIjV2",
+                                    "expanded_url": "https://open.spotify.com/show/42oVKqEPuf4kFZrXCO7Oh9?si=O1I6pHOYRh2FwJ1R0WbMSQ",
+                                    "display_url": "open.spotify.com/show/42oVKqEPu…",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/oz43ix5jZU",
+                                    "expanded_url": "http://Instagram.com/AdamSchefter",
+                                    "display_url": "Instagram.com/AdamSchefter",
+                                    "indices": [
+                                        106,
+                                        129
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 8605691,
+                    "friends_count": 3463,
+                    "listed_count": 51474,
+                    "created_at": "Fri Jun 26 22:55:28 +0000 2009",
+                    "favourites_count": 697,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": true,
+                    "verified": true,
+                    "statuses_count": 56412,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": true,
+                    "profile_background_color": "2573B8",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme4/bg.gif",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme4/bg.gif",
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/793924061843914752/ycm8ibEE_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/793924061843914752/ycm8ibEE_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/51263592/1466784770",
+                    "profile_link_color": "3B94D9",
+                    "profile_sidebar_border_color": "FFFFFF",
+                    "profile_sidebar_fill_color": "95E8EC",
+                    "profile_text_color": "16101F",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": true,
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 2813,
+                "favorite_count": 24884,
+                "favorited": false,
+                "retweeted": false,
+                "lang": "en"
+            },
+            "is_quote_status": false,
+            "retweet_count": 2813,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Oct 06 20:50:46 +0000 2021",
+            "id": 1445854065976479745,
+            "id_str": "1445854065976479745",
+            "text": "@dhelmise @manakiln sorry lucian if u were a lesbian eating a pear in chicago then u might have had my vote…. but alas",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "dhelmise",
+                        "name": "lovise 🖤🦅 +947",
+                        "id": 2680631070,
+                        "id_str": "2680631070",
+                        "indices": [
+                            0,
+                            9
+                        ]
+                    },
+                    {
+                        "screen_name": "manakiln",
+                        "name": "xi",
+                        "id": 1319838069688680448,
+                        "id_str": "1319838069688680448",
+                        "indices": [
+                            10,
+                            19
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": 1445848615025479685,
+            "in_reply_to_status_id_str": "1445848615025479685",
+            "in_reply_to_user_id": 2680631070,
+            "in_reply_to_user_id_str": "2680631070",
+            "in_reply_to_screen_name": "dhelmise",
+            "user": {
+                "id": 1393285758211956736,
+                "id_str": "1393285758211956736",
+                "name": "sam ♢",
+                "screen_name": "sir_samgrace",
+                "location": "♢ he/prince/thon ♢",
+                "description": "hello (it’s spooky season)",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 325,
+                "friends_count": 142,
+                "listed_count": 1,
+                "created_at": "Fri May 14 19:23:19 +0000 2021",
+                "favourites_count": 7018,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 42,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1441289371634716678/Q5EBIXdK_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1441289371634716678/Q5EBIXdK_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/1393285758211956736/1631782098",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Oct 06 20:50:46 +0000 2021",
+            "id": 1445854064835641350,
+            "id_str": "1445854064835641350",
+            "text": "RT @kimeicereales: 06/10/21- Cierres Chicago / MtR  / Dólar MtR diario y Futuro y Dólar Bco. Nación y Mercado de Divisas - @carlosetchepare…",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "kimeicereales",
+                        "name": "Kimei Cereales S.A.",
+                        "id": 1151854497456689155,
+                        "id_str": "1151854497456689155",
+                        "indices": [
+                            3,
+                            17
+                        ]
+                    },
+                    {
+                        "screen_name": "carlosetchepare",
+                        "name": "CARLOS ETCHEPARE",
+                        "id": 155023985,
+                        "id_str": "155023985",
+                        "indices": [
+                            123,
+                            139
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "es",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 1134503109202522114,
+                "id_str": "1134503109202522114",
+                "name": "Suporte Corretora Brasil",
+                "screen_name": "BrasilSuporte",
+                "location": "",
+                "description": "",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 28,
+                "friends_count": 34,
+                "listed_count": 0,
+                "created_at": "Fri May 31 16:53:14 +0000 2019",
+                "favourites_count": 112,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 64,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1161350913489027073/JNyX6TNh_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1161350913489027073/JNyX6TNh_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/1134503109202522114/1565722610",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Wed Oct 06 20:19:16 +0000 2021",
+                "id": 1445846136661504008,
+                "id_str": "1445846136661504008",
+                "text": "06/10/21- Cierres Chicago / MtR  / Dólar MtR diario y Futuro y Dólar Bco. Nación y Mercado de Divisas -… https://t.co/wpVvVkirfE",
+                "truncated": true,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [
+                        {
+                            "url": "https://t.co/wpVvVkirfE",
+                            "expanded_url": "https://twitter.com/i/web/status/1445846136661504008",
+                            "display_url": "twitter.com/i/web/status/1…",
+                            "indices": [
+                                105,
+                                128
+                            ]
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "es",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 1151854497456689155,
+                    "id_str": "1151854497456689155",
+                    "name": "Kimei Cereales S.A.",
+                    "screen_name": "kimeicereales",
+                    "location": "Buenos Aires, Argentina",
+                    "description": "Corredores de Cereales 🌾 Operadores MaTBA-ROFEX 📊 AN RUCA - Matrícula 291 CNV",
+                    "url": "https://t.co/QNUPUUwp2D",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/QNUPUUwp2D",
+                                    "expanded_url": "http://kimei.com.ar",
+                                    "display_url": "kimei.com.ar",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 673,
+                    "friends_count": 322,
+                    "listed_count": 5,
+                    "created_at": "Thu Jul 18 14:01:27 +0000 2019",
+                    "favourites_count": 296,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": false,
+                    "statuses_count": 1170,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "F5F8FA",
+                    "profile_background_image_url": null,
+                    "profile_background_image_url_https": null,
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1274451486458744839/U0iTKTcO_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1274451486458744839/U0iTKTcO_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/1151854497456689155/1592688087",
+                    "profile_link_color": "1DA1F2",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": true,
+                    "default_profile": true,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 4,
+                "favorite_count": 3,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "es"
+            },
+            "is_quote_status": false,
+            "retweet_count": 4,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "es"
+        },
+        {
+            "created_at": "Wed Oct 06 20:50:46 +0000 2021",
+            "id": 1445854063812235266,
+            "id_str": "1445854063812235266",
+            "text": "RT @IoriTosa2: © IMEASE\n\nChicago\n\nWhy I do em Like that\n\n[Westside Gunn]\n\n#streetphotography #streetphoto #NightPhotography \n#bokeh #rainyn…",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "streetphotography",
+                        "indices": [
+                            74,
+                            92
+                        ]
+                    },
+                    {
+                        "text": "streetphoto",
+                        "indices": [
+                            93,
+                            105
+                        ]
+                    },
+                    {
+                        "text": "NightPhotography",
+                        "indices": [
+                            106,
+                            123
+                        ]
+                    },
+                    {
+                        "text": "bokeh",
+                        "indices": [
+                            125,
+                            131
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "IoriTosa2",
+                        "name": "衣緒里/iori",
+                        "id": 1315774567374151681,
+                        "id_str": "1315774567374151681",
+                        "indices": [
+                            3,
+                            13
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 2292038776,
+                "id_str": "2292038776",
+                "name": "Pierre Morél",
+                "screen_name": "ilfigliodipupu",
+                "location": " MilanoNapoliBolognaRomaComo",
+                "description": "",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 11476,
+                "friends_count": 9011,
+                "listed_count": 176,
+                "created_at": "Sun Jan 19 17:30:04 +0000 2014",
+                "favourites_count": 103964,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 59830,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/477033789232001025/SpFmH9QD_normal.jpeg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/477033789232001025/SpFmH9QD_normal.jpeg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2292038776/1434477097",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Fri Oct 01 17:44:45 +0000 2021",
+                "id": 1443995313665036291,
+                "id_str": "1443995313665036291",
+                "text": "© IMEASE\n\nChicago\n\nWhy I do em Like that\n\n[Westside Gunn]\n\n#streetphotography #streetphoto #NightPhotography… https://t.co/QinOeFi9zO",
+                "truncated": true,
+                "entities": {
+                    "hashtags": [
+                        {
+                            "text": "streetphotography",
+                            "indices": [
+                                59,
+                                77
+                            ]
+                        },
+                        {
+                            "text": "streetphoto",
+                            "indices": [
+                                78,
+                                90
+                            ]
+                        },
+                        {
+                            "text": "NightPhotography",
+                            "indices": [
+                                91,
+                                108
+                            ]
+                        }
+                    ],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [
+                        {
+                            "url": "https://t.co/QinOeFi9zO",
+                            "expanded_url": "https://twitter.com/i/web/status/1443995313665036291",
+                            "display_url": "twitter.com/i/web/status/1…",
+                            "indices": [
+                                110,
+                                133
+                            ]
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "en",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 1315774567374151681,
+                    "id_str": "1315774567374151681",
+                    "name": "衣緒里/iori",
+                    "screen_name": "IoriTosa2",
+                    "location": "Japan 日本（Nippon）",
+                    "description": "美人でごめんなさい\n私は今迄、自分で拾った野良猫を、何十匹も保護して、室内で飼ってきました\n保護猫譲渡のサークルや、胡散臭い募金活動をしている人には、絶対に近寄りません\n自分のお金を使って飼えないなら、安易に飼わないで欲しいと思います\n※私自身は倹約し贅沢をせず、猫の為にお金を使います\n♥猫/動物/写真/アートが大好き",
+                    "url": null,
+                    "entities": {
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 3119,
+                    "friends_count": 143,
+                    "listed_count": 43,
+                    "created_at": "Mon Oct 12 22:03:42 +0000 2020",
+                    "favourites_count": 110908,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": false,
+                    "statuses_count": 29109,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "F5F8FA",
+                    "profile_background_image_url": null,
+                    "profile_background_image_url_https": null,
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1436340138624249857/QwY9Kh3v_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1436340138624249857/QwY9Kh3v_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/1315774567374151681/1631326763",
+                    "profile_link_color": "1DA1F2",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": true,
+                    "default_profile": true,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 12,
+                "favorite_count": 35,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "en"
+            },
+            "is_quote_status": false,
+            "retweet_count": 12,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Oct 06 20:50:44 +0000 2021",
+            "id": 1445854055977340939,
+            "id_str": "1445854055977340939",
+            "text": "Closed due to accident in #NorthSideEdgewater on W Bryn Mawr Ave between Broadway/Ridge Ave and Winthrop Ave… https://t.co/ea9JJyWQXe",
+            "truncated": true,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "NorthSideEdgewater",
+                        "indices": [
+                            26,
+                            45
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/ea9JJyWQXe",
+                        "expanded_url": "https://twitter.com/i/web/status/1445854055977340939",
+                        "display_url": "twitter.com/i/web/status/1…",
+                        "indices": [
+                            110,
+                            133
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://www.sigalert.com/Map.asp?region=Chicago\" rel=\"nofollow\">TTN CHI traffic</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 37973195,
+                "id_str": "37973195",
+                "name": "TTWN Chicago",
+                "screen_name": "TotalTrafficCHI",
+                "location": "Chicago, IL",
+                "description": "Chicago's trusted source for traffic info. See something on the roads? Call the Total Traffic Tip Line at (312) 977-1670.",
+                "url": "https://t.co/e4E9cpa99e",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/e4E9cpa99e",
+                                "expanded_url": "http://sigalert.com",
+                                "display_url": "sigalert.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 3280,
+                "friends_count": 226,
+                "listed_count": 152,
+                "created_at": "Tue May 05 17:35:21 +0000 2009",
+                "favourites_count": 136,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 20314,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "131516",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/439091097193566208/AX5UlOdR_normal.png",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/439091097193566208/AX5UlOdR_normal.png",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/37973195/1503539391",
+                "profile_link_color": "2244BB",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": {
+                "type": "Point",
+                "coordinates": [
+                    41.98363,
+                    -87.66008
+                ]
+            },
+            "coordinates": {
+                "type": "Point",
+                "coordinates": [
+                    -87.66008,
+                    41.98363
+                ]
+            },
+            "place": {
+                "id": "1d9a5370a355ab0c",
+                "url": "https://api.twitter.com/1.1/geo/id/1d9a5370a355ab0c.json",
+                "place_type": "city",
+                "name": "Chicago",
+                "full_name": "Chicago, IL",
+                "country_code": "US",
+                "country": "United States",
+                "contained_within": [],
+                "bounding_box": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -87.940033,
+                                41.644102
+                            ],
+                            [
+                                -87.523993,
+                                41.644102
+                            ],
+                            [
+                                -87.523993,
+                                42.0230669
+                            ],
+                            [
+                                -87.940033,
+                                42.0230669
+                            ]
+                        ]
+                    ]
+                },
+                "attributes": {}
+            },
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Oct 06 20:50:43 +0000 2021",
+            "id": 1445854053238558721,
+            "id_str": "1445854053238558721",
+            "text": "CTA Red Line:  CTA Red Line Both NB/SB service suspended between Belmont and Howard #CHITraffic https://t.co/GCesNZoWap",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "CHITraffic",
+                        "indices": [
+                            84,
+                            95
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/GCesNZoWap",
+                        "expanded_url": "http://bit.ly/Z6LhAv",
+                        "display_url": "bit.ly/Z6LhAv",
+                        "indices": [
+                            96,
+                            119
+                        ]
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://www.sigalert.com/Map.asp?region=Chicago\" rel=\"nofollow\">TTN CHI traffic</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 37973195,
+                "id_str": "37973195",
+                "name": "TTWN Chicago",
+                "screen_name": "TotalTrafficCHI",
+                "location": "Chicago, IL",
+                "description": "Chicago's trusted source for traffic info. See something on the roads? Call the Total Traffic Tip Line at (312) 977-1670.",
+                "url": "https://t.co/e4E9cpa99e",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/e4E9cpa99e",
+                                "expanded_url": "http://sigalert.com",
+                                "display_url": "sigalert.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 3280,
+                "friends_count": 226,
+                "listed_count": 152,
+                "created_at": "Tue May 05 17:35:21 +0000 2009",
+                "favourites_count": 136,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 20314,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "131516",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/439091097193566208/AX5UlOdR_normal.png",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/439091097193566208/AX5UlOdR_normal.png",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/37973195/1503539391",
+                "profile_link_color": "2244BB",
+                "profile_sidebar_border_color": "000000",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": {
+                "type": "Point",
+                "coordinates": [
+                    41.93974,
+                    -87.65331
+                ]
+            },
+            "coordinates": {
+                "type": "Point",
+                "coordinates": [
+                    -87.65331,
+                    41.93974
+                ]
+            },
+            "place": {
+                "id": "1d9a5370a355ab0c",
+                "url": "https://api.twitter.com/1.1/geo/id/1d9a5370a355ab0c.json",
+                "place_type": "city",
+                "name": "Chicago",
+                "full_name": "Chicago, IL",
+                "country_code": "US",
+                "country": "United States",
+                "contained_within": [],
+                "bounding_box": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -87.940033,
+                                41.644102
+                            ],
+                            [
+                                -87.523993,
+                                41.644102
+                            ],
+                            [
+                                -87.523993,
+                                42.0230669
+                            ],
+                            [
+                                -87.940033,
+                                42.0230669
+                            ]
+                        ]
+                    ]
+                },
+                "attributes": {}
+            },
+            "contributors": null,
+            "is_quote_status": false,
+            "retweet_count": 0,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Oct 06 20:50:42 +0000 2021",
+            "id": 1445854050461708289,
+            "id_str": "1445854050461708289",
+            "text": "RT @NBCSBears: CHICAGO RIGHT NOW\n\nJustin Fields is QB1! https://t.co/mD0Iw21gZc",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "NBCSBears",
+                        "name": "Bears Talk",
+                        "id": 423536031,
+                        "id_str": "423536031",
+                        "indices": [
+                            3,
+                            13
+                        ]
+                    }
+                ],
+                "urls": [],
+                "media": [
+                    {
+                        "id": 1445805767865495560,
+                        "id_str": "1445805767865495560",
+                        "indices": [
+                            56,
+                            79
+                        ],
+                        "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                        "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                        "url": "https://t.co/mD0Iw21gZc",
+                        "display_url": "pic.twitter.com/mD0Iw21gZc",
+                        "expanded_url": "https://twitter.com/NBCSBears/status/1445805970995744768/video/1",
+                        "type": "photo",
+                        "sizes": {
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "medium": {
+                                "w": 1200,
+                                "h": 675,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 680,
+                                "h": 383,
+                                "resize": "fit"
+                            },
+                            "large": {
+                                "w": 1280,
+                                "h": 720,
+                                "resize": "fit"
+                            }
+                        },
+                        "source_status_id": 1445805970995744768,
+                        "source_status_id_str": "1445805970995744768",
+                        "source_user_id": 423536031,
+                        "source_user_id_str": "423536031"
+                    }
+                ]
+            },
+            "extended_entities": {
+                "media": [
+                    {
+                        "id": 1445805767865495560,
+                        "id_str": "1445805767865495560",
+                        "indices": [
+                            56,
+                            79
+                        ],
+                        "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                        "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                        "url": "https://t.co/mD0Iw21gZc",
+                        "display_url": "pic.twitter.com/mD0Iw21gZc",
+                        "expanded_url": "https://twitter.com/NBCSBears/status/1445805970995744768/video/1",
+                        "type": "video",
+                        "sizes": {
+                            "thumb": {
+                                "w": 150,
+                                "h": 150,
+                                "resize": "crop"
+                            },
+                            "medium": {
+                                "w": 1200,
+                                "h": 675,
+                                "resize": "fit"
+                            },
+                            "small": {
+                                "w": 680,
+                                "h": 383,
+                                "resize": "fit"
+                            },
+                            "large": {
+                                "w": 1280,
+                                "h": 720,
+                                "resize": "fit"
+                            }
+                        },
+                        "source_status_id": 1445805970995744768,
+                        "source_status_id_str": "1445805970995744768",
+                        "source_user_id": 423536031,
+                        "source_user_id_str": "423536031",
+                        "video_info": {
+                            "aspect_ratio": [
+                                16,
+                                9
+                            ],
+                            "duration_millis": 9133,
+                            "variants": [
+                                {
+                                    "bitrate": 2176000,
+                                    "content_type": "video/mp4",
+                                    "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/1280x720/uS4vs7mgdUEiqpGC.mp4?tag=12"
+                                },
+                                {
+                                    "bitrate": 256000,
+                                    "content_type": "video/mp4",
+                                    "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/480x270/xY76lwowwSvZIcDS.mp4?tag=12"
+                                },
+                                {
+                                    "content_type": "application/x-mpegURL",
+                                    "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/pl/CJHaBHYm4-CpJIAM.m3u8?tag=12"
+                                },
+                                {
+                                    "bitrate": 832000,
+                                    "content_type": "video/mp4",
+                                    "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/640x360/t4RtVU1VXK9RkQ-E.mp4?tag=12"
+                                }
+                            ]
+                        },
+                        "additional_media_info": {
+                            "monetizable": false,
+                            "source_user": {
+                                "id": 423536031,
+                                "id_str": "423536031",
+                                "name": "Bears Talk",
+                                "screen_name": "NBCSBears",
+                                "location": "",
+                                "description": "Justin Fields Talk",
+                                "url": "https://t.co/K2g6aTtCN9",
+                                "entities": {
+                                    "url": {
+                                        "urls": [
+                                            {
+                                                "url": "https://t.co/K2g6aTtCN9",
+                                                "expanded_url": "http://nbcsportschicago.com/bears",
+                                                "display_url": "nbcsportschicago.com/bears",
+                                                "indices": [
+                                                    0,
+                                                    23
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    "description": {
+                                        "urls": []
+                                    }
+                                },
+                                "protected": false,
+                                "followers_count": 44486,
+                                "friends_count": 162,
+                                "listed_count": 617,
+                                "created_at": "Mon Nov 28 16:42:41 +0000 2011",
+                                "favourites_count": 964,
+                                "utc_offset": null,
+                                "time_zone": null,
+                                "geo_enabled": false,
+                                "verified": true,
+                                "statuses_count": 30529,
+                                "lang": null,
+                                "contributors_enabled": false,
+                                "is_translator": false,
+                                "is_translation_enabled": false,
+                                "profile_background_color": "C0DEED",
+                                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                                "profile_background_tile": true,
+                                "profile_image_url": "http://pbs.twimg.com/profile_images/1388189746111909889/t-lMKudq_normal.jpg",
+                                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1388189746111909889/t-lMKudq_normal.jpg",
+                                "profile_banner_url": "https://pbs.twimg.com/profile_banners/423536031/1615929921",
+                                "profile_link_color": "0084B4",
+                                "profile_sidebar_border_color": "C0DEED",
+                                "profile_sidebar_fill_color": "DDEEF6",
+                                "profile_text_color": "333333",
+                                "profile_use_background_image": true,
+                                "has_extended_profile": false,
+                                "default_profile": false,
+                                "default_profile_image": false,
+                                "following": null,
+                                "follow_request_sent": null,
+                                "notifications": null,
+                                "translator_type": "none",
+                                "withheld_in_countries": []
+                            }
+                        }
+                    }
+                ]
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 715920181336399872,
+                "id_str": "715920181336399872",
+                "name": "Pauly 🚀",
+                "screen_name": "Paulgallardo23",
+                "location": "",
+                "description": "I recognize that life is a dream, and I dream lucid",
+                "url": "https://t.co/LSwjY7EcGy",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/LSwjY7EcGy",
+                                "expanded_url": "https://www.instagram.com/gallardo13_/?hl=en",
+                                "display_url": "instagram.com/gallardo13_/?h…",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 225,
+                "friends_count": 229,
+                "listed_count": 0,
+                "created_at": "Fri Apr 01 15:14:07 +0000 2016",
+                "favourites_count": 9674,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 1472,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1246212720304635905/0XzrogL9_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1246212720304635905/0XzrogL9_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/715920181336399872/1620471545",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Wed Oct 06 17:39:39 +0000 2021",
+                "id": 1445805970995744768,
+                "id_str": "1445805970995744768",
+                "text": "CHICAGO RIGHT NOW\n\nJustin Fields is QB1! https://t.co/mD0Iw21gZc",
+                "truncated": false,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [],
+                    "media": [
+                        {
+                            "id": 1445805767865495560,
+                            "id_str": "1445805767865495560",
+                            "indices": [
+                                41,
+                                64
+                            ],
+                            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                            "url": "https://t.co/mD0Iw21gZc",
+                            "display_url": "pic.twitter.com/mD0Iw21gZc",
+                            "expanded_url": "https://twitter.com/NBCSBears/status/1445805970995744768/video/1",
+                            "type": "photo",
+                            "sizes": {
+                                "thumb": {
+                                    "w": 150,
+                                    "h": 150,
+                                    "resize": "crop"
+                                },
+                                "medium": {
+                                    "w": 1200,
+                                    "h": 675,
+                                    "resize": "fit"
+                                },
+                                "small": {
+                                    "w": 680,
+                                    "h": 383,
+                                    "resize": "fit"
+                                },
+                                "large": {
+                                    "w": 1280,
+                                    "h": 720,
+                                    "resize": "fit"
+                                }
+                            }
+                        }
+                    ]
+                },
+                "extended_entities": {
+                    "media": [
+                        {
+                            "id": 1445805767865495560,
+                            "id_str": "1445805767865495560",
+                            "indices": [
+                                41,
+                                64
+                            ],
+                            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1445805767865495560/pu/img/8Fl0dFEBJTrhGlQh.jpg",
+                            "url": "https://t.co/mD0Iw21gZc",
+                            "display_url": "pic.twitter.com/mD0Iw21gZc",
+                            "expanded_url": "https://twitter.com/NBCSBears/status/1445805970995744768/video/1",
+                            "type": "video",
+                            "sizes": {
+                                "thumb": {
+                                    "w": 150,
+                                    "h": 150,
+                                    "resize": "crop"
+                                },
+                                "medium": {
+                                    "w": 1200,
+                                    "h": 675,
+                                    "resize": "fit"
+                                },
+                                "small": {
+                                    "w": 680,
+                                    "h": 383,
+                                    "resize": "fit"
+                                },
+                                "large": {
+                                    "w": 1280,
+                                    "h": 720,
+                                    "resize": "fit"
+                                }
+                            },
+                            "video_info": {
+                                "aspect_ratio": [
+                                    16,
+                                    9
+                                ],
+                                "duration_millis": 9133,
+                                "variants": [
+                                    {
+                                        "bitrate": 2176000,
+                                        "content_type": "video/mp4",
+                                        "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/1280x720/uS4vs7mgdUEiqpGC.mp4?tag=12"
+                                    },
+                                    {
+                                        "bitrate": 256000,
+                                        "content_type": "video/mp4",
+                                        "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/480x270/xY76lwowwSvZIcDS.mp4?tag=12"
+                                    },
+                                    {
+                                        "content_type": "application/x-mpegURL",
+                                        "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/pl/CJHaBHYm4-CpJIAM.m3u8?tag=12"
+                                    },
+                                    {
+                                        "bitrate": 832000,
+                                        "content_type": "video/mp4",
+                                        "url": "https://video.twimg.com/ext_tw_video/1445805767865495560/pu/vid/640x360/t4RtVU1VXK9RkQ-E.mp4?tag=12"
+                                    }
+                                ]
+                            },
+                            "additional_media_info": {
+                                "monetizable": false
+                            }
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "en",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 423536031,
+                    "id_str": "423536031",
+                    "name": "Bears Talk",
+                    "screen_name": "NBCSBears",
+                    "location": "",
+                    "description": "Justin Fields Talk",
+                    "url": "https://t.co/K2g6aTtCN9",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/K2g6aTtCN9",
+                                    "expanded_url": "http://nbcsportschicago.com/bears",
+                                    "display_url": "nbcsportschicago.com/bears",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 44486,
+                    "friends_count": 162,
+                    "listed_count": 617,
+                    "created_at": "Mon Nov 28 16:42:41 +0000 2011",
+                    "favourites_count": 964,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": true,
+                    "statuses_count": 30529,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "C0DEED",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_tile": true,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1388189746111909889/t-lMKudq_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1388189746111909889/t-lMKudq_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/423536031/1615929921",
+                    "profile_link_color": "0084B4",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": false,
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 1802,
+                "favorite_count": 6040,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "en"
+            },
+            "is_quote_status": false,
+            "retweet_count": 1802,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Oct 06 20:50:42 +0000 2021",
+            "id": 1445854048813453314,
+            "id_str": "1445854048813453314",
+            "text": "RT @IoriTosa2: © IMEASE\n\nChicago, Illinois\n\nHoly Umbrella\n\n[Evidence]\n\n#streetphotography #streetphoto #bokeh #rainyday  #rain #umbrella #C…",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                    {
+                        "text": "streetphotography",
+                        "indices": [
+                            71,
+                            89
+                        ]
+                    },
+                    {
+                        "text": "streetphoto",
+                        "indices": [
+                            90,
+                            102
+                        ]
+                    },
+                    {
+                        "text": "bokeh",
+                        "indices": [
+                            103,
+                            109
+                        ]
+                    },
+                    {
+                        "text": "rainyday",
+                        "indices": [
+                            110,
+                            119
+                        ]
+                    },
+                    {
+                        "text": "rain",
+                        "indices": [
+                            121,
+                            126
+                        ]
+                    },
+                    {
+                        "text": "umbrella",
+                        "indices": [
+                            127,
+                            136
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "IoriTosa2",
+                        "name": "衣緒里/iori",
+                        "id": 1315774567374151681,
+                        "id_str": "1315774567374151681",
+                        "indices": [
+                            3,
+                            13
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 2292038776,
+                "id_str": "2292038776",
+                "name": "Pierre Morél",
+                "screen_name": "ilfigliodipupu",
+                "location": " MilanoNapoliBolognaRomaComo",
+                "description": "",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 11476,
+                "friends_count": 9011,
+                "listed_count": 176,
+                "created_at": "Sun Jan 19 17:30:04 +0000 2014",
+                "favourites_count": 103964,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": false,
+                "statuses_count": 59830,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/477033789232001025/SpFmH9QD_normal.jpeg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/477033789232001025/SpFmH9QD_normal.jpeg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/2292038776/1434477097",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Fri Oct 01 17:49:02 +0000 2021",
+                "id": 1443996389646606336,
+                "id_str": "1443996389646606336",
+                "text": "© IMEASE\n\nChicago, Illinois\n\nHoly Umbrella\n\n[Evidence]\n\n#streetphotography #streetphoto #bokeh #rainyday  #rain… https://t.co/wQ5C5VdPn6",
+                "truncated": true,
+                "entities": {
+                    "hashtags": [
+                        {
+                            "text": "streetphotography",
+                            "indices": [
+                                56,
+                                74
+                            ]
+                        },
+                        {
+                            "text": "streetphoto",
+                            "indices": [
+                                75,
+                                87
+                            ]
+                        },
+                        {
+                            "text": "bokeh",
+                            "indices": [
+                                88,
+                                94
+                            ]
+                        },
+                        {
+                            "text": "rainyday",
+                            "indices": [
+                                95,
+                                104
+                            ]
+                        },
+                        {
+                            "text": "rain",
+                            "indices": [
+                                106,
+                                111
+                            ]
+                        }
+                    ],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [
+                        {
+                            "url": "https://t.co/wQ5C5VdPn6",
+                            "expanded_url": "https://twitter.com/i/web/status/1443996389646606336",
+                            "display_url": "twitter.com/i/web/status/1…",
+                            "indices": [
+                                113,
+                                136
+                            ]
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "en",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 1315774567374151681,
+                    "id_str": "1315774567374151681",
+                    "name": "衣緒里/iori",
+                    "screen_name": "IoriTosa2",
+                    "location": "Japan 日本（Nippon）",
+                    "description": "美人でごめんなさい\n私は今迄、自分で拾った野良猫を、何十匹も保護して、室内で飼ってきました\n保護猫譲渡のサークルや、胡散臭い募金活動をしている人には、絶対に近寄りません\n自分のお金を使って飼えないなら、安易に飼わないで欲しいと思います\n※私自身は倹約し贅沢をせず、猫の為にお金を使います\n♥猫/動物/写真/アートが大好き",
+                    "url": null,
+                    "entities": {
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 3119,
+                    "friends_count": 143,
+                    "listed_count": 43,
+                    "created_at": "Mon Oct 12 22:03:42 +0000 2020",
+                    "favourites_count": 110908,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": false,
+                    "verified": false,
+                    "statuses_count": 29109,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "F5F8FA",
+                    "profile_background_image_url": null,
+                    "profile_background_image_url_https": null,
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1436340138624249857/QwY9Kh3v_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1436340138624249857/QwY9Kh3v_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/1315774567374151681/1631326763",
+                    "profile_link_color": "1DA1F2",
+                    "profile_sidebar_border_color": "C0DEED",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": true,
+                    "default_profile": true,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 54,
+                "favorite_count": 216,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "en"
+            },
+            "is_quote_status": false,
+            "retweet_count": 54,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        },
+        {
+            "created_at": "Wed Oct 06 20:50:42 +0000 2021",
+            "id": 1445854048188395525,
+            "id_str": "1445854048188395525",
+            "text": "RT @AdamSchefter: Bears’ HC Matt Nagy announces that, going forward, Justin Fields is Chicago’s starting QB.",
+            "truncated": false,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "AdamSchefter",
+                        "name": "Adam Schefter",
+                        "id": 51263592,
+                        "id_str": "51263592",
+                        "indices": [
+                            3,
+                            16
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 716762310455504898,
+                "id_str": "716762310455504898",
+                "name": "Jack",
+                "screen_name": "Jack_Kossin11",
+                "location": "Olney, MD",
+                "description": "",
+                "url": null,
+                "entities": {
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 170,
+                "friends_count": 618,
+                "listed_count": 0,
+                "created_at": "Sun Apr 03 23:00:26 +0000 2016",
+                "favourites_count": 44411,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 34775,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "F5F8FA",
+                "profile_background_image_url": null,
+                "profile_background_image_url_https": null,
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1324239525451866114/FqdiduHq_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1324239525451866114/FqdiduHq_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/716762310455504898/1586330523",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Wed Oct 06 16:58:43 +0000 2021",
+                "id": 1445795669285892098,
+                "id_str": "1445795669285892098",
+                "text": "Bears’ HC Matt Nagy announces that, going forward, Justin Fields is Chicago’s starting QB.",
+                "truncated": false,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": []
+                },
+                "metadata": {
+                    "iso_language_code": "en",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 51263592,
+                    "id_str": "51263592",
+                    "name": "Adam Schefter",
+                    "screen_name": "AdamSchefter",
+                    "location": "New York",
+                    "description": "ESPN Senior NFL Insider. \nInterview & Podcast Requests: ESPNPR@espn.com\nHost of the Adam Schefter Podcast\nhttps://t.co/oz43ix5jZU",
+                    "url": "https://t.co/OUz4GsIjV2",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/OUz4GsIjV2",
+                                    "expanded_url": "https://open.spotify.com/show/42oVKqEPuf4kFZrXCO7Oh9?si=O1I6pHOYRh2FwJ1R0WbMSQ",
+                                    "display_url": "open.spotify.com/show/42oVKqEPu…",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/oz43ix5jZU",
+                                    "expanded_url": "http://Instagram.com/AdamSchefter",
+                                    "display_url": "Instagram.com/AdamSchefter",
+                                    "indices": [
+                                        106,
+                                        129
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 8605691,
+                    "friends_count": 3463,
+                    "listed_count": 51474,
+                    "created_at": "Fri Jun 26 22:55:28 +0000 2009",
+                    "favourites_count": 697,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": true,
+                    "verified": true,
+                    "statuses_count": 56412,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": true,
+                    "profile_background_color": "2573B8",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme4/bg.gif",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme4/bg.gif",
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/793924061843914752/ycm8ibEE_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/793924061843914752/ycm8ibEE_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/51263592/1466784770",
+                    "profile_link_color": "3B94D9",
+                    "profile_sidebar_border_color": "FFFFFF",
+                    "profile_sidebar_fill_color": "95E8EC",
+                    "profile_text_color": "16101F",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": true,
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 2813,
+                "favorite_count": 24884,
+                "favorited": false,
+                "retweeted": false,
+                "lang": "en"
+            },
+            "is_quote_status": false,
+            "retweet_count": 2813,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        }
+    ],
+    "search_metadata": {
+        "completed_in": 0.066,
+        "max_id": 1445854090219728896,
+        "max_id_str": "1445854090219728896",
+        "next_results": "?max_id=1445854048188395524&q=Chicago&count=11&include_entities=1",
+        "query": "Chicago",
+        "refresh_url": "?since_id=1445854090219728896&q=Chicago&include_entities=1",
+        "count": 11,
+        "since_id": 0,
+        "since_id_str": "0"
+    }
+}

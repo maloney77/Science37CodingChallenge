@@ -1,0 +1,520 @@
+{
+    "statuses": [
+        {
+            "created_at": "Wed Oct 06 21:25:31 +0000 2021",
+            "id": 1445862810907406339,
+            "id_str": "1445862810907406339",
+            "text": "RT @penguinlibroscl: 📕 #ChicagoBoys ,basado en el documental homónimo, profundiza en las biografías, pensamientos y acciones del grupo que…",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                    {
+                    "text": "ChicagoBoys",
+                        "indices": [
+                            23,
+                            35
+                        ]
+                    }
+                ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "penguinlibroscl",
+                        "name": "Penguin Chile",
+                        "id": 564667141,
+                        "id_str": "564667141",
+                        "indices": [
+                            3,
+                            19
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "es",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 17768092,
+                "id_str": "17768092",
+                "name": "carola fuentes",
+                "screen_name": "carolafuentes",
+                "location": "chile",
+                "description": "Periodista, documentalista y socia de @laventanacine. Nuestro propósito: investigar, producir y difundir contenidos que generen impacto positivo en la audiencia",
+                "url": "http://t.co/0MHvtO6YT0",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/0MHvtO6YT0",
+                                "expanded_url": "http://www.laventanacine.com",
+                                "display_url": "laventanacine.com",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 89477,
+                "friends_count": 1329,
+                "listed_count": 1034,
+                "created_at": "Mon Dec 01 01:35:13 +0000 2008",
+                "favourites_count": 1755,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 30744,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "BABADF",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/539586854006185984/Pumkzuca_normal.jpeg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/539586854006185984/Pumkzuca_normal.jpeg",
+                "profile_link_color": "FF0000",
+                "profile_sidebar_border_color": "FFFFFF",
+                "profile_sidebar_fill_color": "FFF7CC",
+                "profile_text_color": "530C3B",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Wed Oct 06 20:51:41 +0000 2021",
+                "id": 1445854294675267585,
+                "id_str": "1445854294675267585",
+                "text": "📕 #ChicagoBoys ,basado en el documental homónimo, profundiza en las biografías, pensamientos y acciones del grupo q… https://t.co/M4j3MU01OE",
+                "truncated": true,
+                "entities": {
+                    "hashtags": [
+                        {
+                            "text": "ChicagoBoys",
+                            "indices": [
+                                2,
+                                14
+                            ]
+                        }
+                    ],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [
+                        {
+                            "url": "https://t.co/M4j3MU01OE",
+                            "expanded_url": "https://twitter.com/i/web/status/1445854294675267585",
+                            "display_url": "twitter.com/i/web/status/1…",
+                            "indices": [
+                                117,
+                                140
+                            ]
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "es",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 564667141,
+                    "id_str": "564667141",
+                    "name": "Penguin Chile",
+                    "screen_name": "penguinlibroscl",
+                    "location": "Chile",
+                    "description": "Twitter oficial de Penguin Random House Chile ¿Te gusta leer?",
+                    "url": "https://t.co/xMopFo062s",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/xMopFo062s",
+                                    "expanded_url": "http://www.penguinlibros.com",
+                                    "display_url": "penguinlibros.com",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 43615,
+                    "friends_count": 9304,
+                    "listed_count": 150,
+                    "created_at": "Fri Apr 27 14:40:29 +0000 2012",
+                    "favourites_count": 52151,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": true,
+                    "verified": true,
+                    "statuses_count": 42178,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "ABB8C2",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_tile": true,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1415668739995885568/vg_TS8g4_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1415668739995885568/vg_TS8g4_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/564667141/1630425943",
+                    "profile_link_color": "0C6A9C",
+                    "profile_sidebar_border_color": "FFFFFF",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": false,
+                    "has_extended_profile": false,
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 2,
+                "favorite_count": 2,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "es"
+            },
+            "is_quote_status": false,
+            "retweet_count": 2,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "es"
+        },
+        {
+            "created_at": "Wed Oct 06 13:25:31 +0000 2021",
+            "id": 1445862810731175936,
+            "id_str": "1445862810731175936",
+            "text": "RT @dc_mma: In chicago for @MonsterEnergy and I ran into the champ @WWEBigE !!!! He is finally the @WWE champion and no one deserves it mor…",
+            "truncated": false,
+            "entities": {
+                "hashtags": [
+                	{
+                        "text": "ChicagoBoys",
+                        "indices": [
+                            23,
+                            35
+                        ]
+                    }
+                 ],
+                "symbols": [],
+                "user_mentions": [
+                    {
+                        "screen_name": "dc_mma",
+                        "name": "Daniel Cormier",
+                        "id": 57516454,
+                        "id_str": "57516454",
+                        "indices": [
+                            3,
+                            10
+                        ]
+                    },
+                    {
+                        "screen_name": "MonsterEnergy",
+                        "name": "Monster Energy",
+                        "id": 63253045,
+                        "id_str": "63253045",
+                        "indices": [
+                            27,
+                            41
+                        ]
+                    },
+                    {
+                        "screen_name": "WWEBigE",
+                        "name": "Ettore “Big E” Ewen",
+                        "id": 533394907,
+                        "id_str": "533394907",
+                        "indices": [
+                            67,
+                            75
+                        ]
+                    },
+                    {
+                        "screen_name": "WWE",
+                        "name": "WWE",
+                        "id": 7517222,
+                        "id_str": "7517222",
+                        "indices": [
+                            99,
+                            103
+                        ]
+                    }
+                ],
+                "urls": []
+            },
+            "metadata": {
+                "iso_language_code": "en",
+                "result_type": "recent"
+            },
+            "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 33859461,
+                "id_str": "33859461",
+                "name": "Will WoMA TV",
+                "screen_name": "Willwitter",
+                "location": "London",
+                "description": "World of Martial Arts Television is the global venue for all good martial artists everywhere. http://t.co/U0YzM9bjH5 #TeamMMA4Life",
+                "url": "http://t.co/0iUnXziKfH",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/0iUnXziKfH",
+                                "expanded_url": "http://www.worldofmartialarts.tv",
+                                "display_url": "worldofmartialarts.tv",
+                                "indices": [
+                                    0,
+                                    22
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": [
+                            {
+                                "url": "http://t.co/U0YzM9bjH5",
+                                "expanded_url": "http://www.woma.tv",
+                                "display_url": "woma.tv",
+                                "indices": [
+                                    94,
+                                    116
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "protected": false,
+                "followers_count": 9871,
+                "friends_count": 8363,
+                "listed_count": 166,
+                "created_at": "Tue Apr 21 09:29:46 +0000 2009",
+                "favourites_count": 63785,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": false,
+                "verified": false,
+                "statuses_count": 39086,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "C0DEED",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                "profile_background_tile": false,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1639141092/japan_126_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1639141092/japan_126_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/33859461/1424112262",
+                "profile_link_color": "1DA1F2",
+                "profile_sidebar_border_color": "C0DEED",
+                "profile_sidebar_fill_color": "DDEEF6",
+                "profile_text_color": "333333",
+                "profile_use_background_image": true,
+                "has_extended_profile": false,
+                "default_profile": true,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none",
+                "withheld_in_countries": []
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "retweeted_status": {
+                "created_at": "Wed Oct 06 19:50:18 +0000 2021",
+                "id": 1445838848269996033,
+                "id_str": "1445838848269996033",
+                "text": "In chicago for @MonsterEnergy and I ran into the champ @WWEBigE !!!! He is finally the @WWE champion and no one des… https://t.co/1zS1ISVfnu",
+                "truncated": true,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [
+                        {
+                            "screen_name": "MonsterEnergy",
+                            "name": "Monster Energy",
+                            "id": 63253045,
+                            "id_str": "63253045",
+                            "indices": [
+                                15,
+                                29
+                            ]
+                        },
+                        {
+                            "screen_name": "WWEBigE",
+                            "name": "Ettore “Big E” Ewen",
+                            "id": 533394907,
+                            "id_str": "533394907",
+                            "indices": [
+                                55,
+                                63
+                            ]
+                        },
+                        {
+                            "screen_name": "WWE",
+                            "name": "WWE",
+                            "id": 7517222,
+                            "id_str": "7517222",
+                            "indices": [
+                                87,
+                                91
+                            ]
+                        }
+                    ],
+                    "urls": [
+                        {
+                            "url": "https://t.co/1zS1ISVfnu",
+                            "expanded_url": "https://twitter.com/i/web/status/1445838848269996033",
+                            "display_url": "twitter.com/i/web/status/1…",
+                            "indices": [
+                                117,
+                                140
+                            ]
+                        }
+                    ]
+                },
+                "metadata": {
+                    "iso_language_code": "en",
+                    "result_type": "recent"
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 57516454,
+                    "id_str": "57516454",
+                    "name": "Daniel Cormier",
+                    "screen_name": "dc_mma",
+                    "location": "San Jose",
+                    "description": "UFC Heavyweight & Light Heavyweight Champ / FOX Sports host / 2x US Olympian / StrikeForce Heavyweight Grand Prix Champ CONTACT: @dewaynezinkin",
+                    "url": null,
+                    "entities": {
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 1227892,
+                    "friends_count": 693,
+                    "listed_count": 3142,
+                    "created_at": "Fri Jul 17 01:57:36 +0000 2009",
+                    "favourites_count": 379,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": true,
+                    "verified": true,
+                    "statuses_count": 15228,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "1A1B1F",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif",
+                    "profile_background_tile": true,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1016719078524739585/3O6IYCZQ_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1016719078524739585/3O6IYCZQ_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/57516454/1432755378",
+                    "profile_link_color": "2FC2EF",
+                    "profile_sidebar_border_color": "FFFFFF",
+                    "profile_sidebar_fill_color": "252429",
+                    "profile_text_color": "666666",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": false,
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none",
+                    "withheld_in_countries": []
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": null,
+                "contributors": null,
+                "is_quote_status": false,
+                "retweet_count": 213,
+                "favorite_count": 2156,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "en"
+            },
+            "is_quote_status": false,
+            "retweet_count": 213,
+            "favorite_count": 0,
+            "favorited": false,
+            "retweeted": false,
+            "lang": "en"
+        }
+    ],
+    "search_metadata": {
+        "completed_in": 0.031,
+        "max_id": 1445862810907406339,
+        "max_id_str": "1445862810907406339",
+        "next_results": "?max_id=1445862810731175935&q=Chicago&count=2&include_entities=1",
+        "query": "Chicago",
+        "refresh_url": "?since_id=1445862810907406339&q=Chicago&include_entities=1",
+        "count": 2,
+        "since_id": 0,
+        "since_id_str": "0"
+    }
+}

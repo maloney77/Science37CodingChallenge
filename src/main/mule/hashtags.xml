@@ -7,7 +7,9 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<flow name="hashtags-main" doc:id="47bbae12-c947-44ad-b30d-fb7cee7acbdd" >
 		<logger level="INFO" doc:name="Log request start time" doc:id="79fae744-0041-41b3-a7d2-e9a61805cc19" message='#["Received new hashtags request at " ++ now() &gt;&gt; "CST"]' />
+		<set-variable value="#[attributes.queryParams]" doc:name="Set queryParams" doc:id="25f61f1c-d602-4f7d-b2dc-2d5b65fec1ac" variableName="queryParams	"/>
 		<logger level="DEBUG" doc:name="DEBUG: Log incoming query parameters" doc:id="e70da57e-b58a-456f-9e51-83aef6978218" message="Incoming query parameters: #[vars.queryParams]" />
+		<flow-ref doc:name="validate-hashtag-query-parameters" doc:id="6d54ac2f-467c-4e15-ac73-1977de846515" name="validate-hashtag-query-parameters"/>
 		<http:request method="GET" doc:name="Request To Twitter For Tweets" doc:id="0045cd68-8a25-45ee-ab41-453f847fa1d5" config-ref="HTTPS_Twitter_Request_Config" path="${secure::twitter.api.path.searchTweets}">
 			<http:headers><![CDATA[#[output application/java
 ---
@@ -42,4 +44,29 @@ output application/json
 		</ee:transform>
 		<logger level="INFO" doc:name="Log end time" doc:id="c2f7d0e8-dbe0-442b-8d38-81bd00c63620" message='#["Successful call finished at " ++ now() &gt;&gt; "CST"]' />
 	</flow>
+	<sub-flow name="validate-hashtag-query-parameters" doc:id="dde85386-a5b8-474b-b5e1-dd067879822d" >
+		<ee:transform doc:name="set parametersAreValid" doc:id="dd0d2c4f-1931-4b8e-8f2b-a96f28a4950f" >
+			<ee:message />
+			<ee:variables >
+				<ee:set-variable variableName="invalidParameter" ><![CDATA[%dw 2.0
+output application/java
+
+
+---
+//check if searchCriteria is not an empty string
+if(!contains(vars.queryParams.searchCriteria, /[a-zA-Z0-9]+/))
+	"searchCriteria must contain at least one alpha numeric character"
+else null
+
+
+]]></ee:set-variable>
+			</ee:variables>
+		</ee:transform>
+		<choice doc:name="If any parameters are invalid" doc:id="33cb0a29-471c-4cf1-b499-d3d4152af1a6" >
+			<when expression="#[vars.invalidParameter != null]" >
+				<logger level="ERROR" doc:name="Log Bad Request" doc:id="019699da-2955-4e24-9f12-7412f83d8289" message="the incoming query parameters are invalid #[vars.invalidParameters]" />
+				<raise-error doc:name="Raise error INBOUNDPARAMETERS:BAD_REQUEST" doc:id="29a81445-33e5-42dd-bda7-7d2cfe4e3d36" type="INBOUNDPARAMETERS:BAD_REQUEST" description="#[vars.invalidParameter]" />
+			</when>
+		</choice>
+	</sub-flow>
 </mule>

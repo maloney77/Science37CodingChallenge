@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd http://www.mulesoft.org/schema/mule/munit-tools http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd ">
+    <munit:config name="social-media-twitter-tweet-management-system-apikit-test.xml" />
+    <http:request-config name="Test_HTTP_Request_Configuration" basePath="${secure::api.basePath}" responseTimeout="100000">
+        <http:request-connection host="localhost" port="8081" />
+    </http:request-config>
+    <munit:test name="tweets-endpoint-only-returns-10-records-max" description="When the twitter api returns more than 10 results, the api still only returns 10 results">
+        <munit:enable-flow-sources>
+            <munit:enable-flow-source value="social-media-twitter-tweet-management-system-main" />
+            <munit:enable-flow-source value="get:\tweets:social-media-twitter-tweet-management-system-config" />
+        </munit:enable-flow-sources>
+        <munit:behavior >
+			<munit-tools:mock-when doc:name="Mock twitter call and return 11 results" doc:id="656997d2-44e0-462b-b7b4-f03fb5c9b2e2" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="GET" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Request To Twitter For Tweets" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="HTTPS_Twitter_Request_Config" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="${secure::twitter.api.path.searchTweets}" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsString('scaffolder/twitter-responses/eleven_twitter_results.json')]" mediaType="application/json" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution>
+            <http:request config-ref="Test_HTTP_Request_Configuration" method="GET" path="/tweets">
+                <http:headers><![CDATA[#[{"Accept":"application/json","client_secret":"","client_id":""}]]]></http:headers>
+                <http:query-params><![CDATA[#[{"timeLimit":"5","searchCriteria":"Chicago Bears"}]]]></http:query-params>
+            </http:request>
+        </munit:execution>
+        <munit:validation>
+            <munit-tools:assert-that expression="#[output application/java --- sizeOf(payload.results)]" is="#[MunitTools::equalTo(10)]" message="The response is too large" doc:name="Assert That - Payload is only 10 records long" />
+        </munit:validation>
+    </munit:test>
+    
+    <munit:test name="tweets-endpoint-only-returns-records-within-timeframe" description="The api filters out any twitter results that are not from {timeLimit} hours ago">
+        <munit:enable-flow-sources>
+            <munit:enable-flow-source value="social-media-twitter-tweet-management-system-main" />
+            <munit:enable-flow-source value="get:\tweets:social-media-twitter-tweet-management-system-config" />
+        </munit:enable-flow-sources>
+        <munit:behavior >
+			<munit-tools:mock-when doc:name="Mock twitter call and return two records" doc:id="57aee9b3-4bad-4c15-91e7-3f2cd3580c75" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="GET" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Request To Twitter For Tweets" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="HTTPS_Twitter_Request_Config" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="${secure::twitter.api.path.searchTweets}" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsString('scaffolder/twitter-responses/twitter-results-with-one-old-record.json')]" mediaType="application/json" />
+					<munit-tools:variables >
+						<munit-tools:variable key="currentTime" value='#["2021-10-06T22:25:31Z" as DateTime]' mediaType="application/java" />
+					</munit-tools:variables>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution>
+            <http:request config-ref="Test_HTTP_Request_Configuration" method="GET" path="/tweets">
+                <http:headers><![CDATA[#[{"Accept":"application/json","client_secret":"","client_id":""}]]]></http:headers>
+                <http:query-params><![CDATA[#[{"timeLimit":"5","searchCriteria":"Chicago Bears"}]]]></http:query-params>
+            </http:request>
+        </munit:execution>
+        <munit:validation>
+            <munit-tools:assert-that expression="#[payload]" is="#[MunitTools::equalTo(readUrl('classpath://scaffolder/response/one-successful-result.json', 'application/json'))]" message="The response is not filtering out old records properly" doc:name="Assert That - Payload only contains the one recent record" />
+        </munit:validation>
+    </munit:test>
+    <munit:test name="hashtags-endpoint-returns-only-unique-hashtags" description="When the twitter api returns results with duplicate hashtags, the api only returns the unique ones">
+        <munit:enable-flow-sources>
+            <munit:enable-flow-source value="social-media-twitter-tweet-management-system-main" />
+            <munit:enable-flow-source value="get:\tweets\popular\hashtags:social-media-twitter-tweet-management-system-config" />
+        </munit:enable-flow-sources>
+        <munit:behavior >
+			<munit-tools:mock-when doc:name="Mock twitter call and return duplicate hashtags" doc:id="da6a2174-ce48-47f7-8a16-7db9c12288e5" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="GET" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Request To Twitter For Tweets" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="HTTPS_Twitter_Request_Config" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="${secure::twitter.api.path.searchTweets}" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsString('scaffolder/twitter-responses/twitter-results-with-duplicate-hashtags.json')]" mediaType="application/json" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution>
+            <http:request config-ref="Test_HTTP_Request_Configuration" method="GET" path="/tweets/popular/hashtags">
+                <http:headers><![CDATA[#[{"Accept":"application/json","client_secret":"","client_id":""}]]]></http:headers>
+                <http:query-params><![CDATA[#[{"searchCriteria":"Chicago"}]]]></http:query-params>
+            </http:request>
+        </munit:execution>
+        <munit:validation>
+            <munit-tools:assert-that expression="#[payload]" is="#[MunitTools::equalTo(readUrl('classpath://scaffolder/response/one-hashtag-response.json', 'application/json'))]" message="The response has duplicates" doc:name="Assert That - Payload only contains the unique hashtag" />
+        </munit:validation>
+    </munit:test>
+    
+    <munit:test name="hashtags-endpoint-returns-all-unique-hashtags" description="When the twitter api returns results with multiple unique hashtags, the api returns all the unique hashtags">
+        <munit:enable-flow-sources>
+            <munit:enable-flow-source value="social-media-twitter-tweet-management-system-main" />
+            <munit:enable-flow-source value="get:\tweets\popular\hashtags:social-media-twitter-tweet-management-system-config" />
+        </munit:enable-flow-sources>
+        <munit:behavior >
+			<munit-tools:mock-when doc:name="Mock twitter call and return duplicate hashtags" doc:id="d9300b56-5de5-435e-bea2-aa5519dfe0d0" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="GET" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Request To Twitter For Tweets" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="HTTPS_Twitter_Request_Config" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="${secure::twitter.api.path.searchTweets}" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsString('scaffolder/twitter-responses/twitter-results-with-three-unique-hashtags.json')]" mediaType="application/json" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution>
+            <http:request config-ref="Test_HTTP_Request_Configuration" method="GET" path="/tweets/popular/hashtags">
+                <http:headers><![CDATA[#[{"Accept":"application/json","client_secret":"","client_id":""}]]]></http:headers>
+                <http:query-params><![CDATA[#[{"searchCriteria":"Chicago"}]]]></http:query-params>
+            </http:request>
+        </munit:execution>
+        <munit:validation>
+            <munit-tools:assert-that expression="#[payload]" is="#[MunitTools::equalTo(readUrl('classpath://scaffolder/response/three-hashtag-response.json', 'application/json'))]" message="The response has duplicates" doc:name="Assert That - Payload only contains the unique hashtag" />
+        </munit:validation>
+    </munit:test>
+    
+</mule>
