@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "41eac7f2-b278-44d8-a49b-2cca163aff00",
+		"name": "Science 37 Code Challenge Public",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Twitter Core Calls",
+			"item": [
+				{
+					"name": "get popular tweets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAAI4OHgEAAAAAlbk0HSIAqcc3havrrU9j2NeAQ34%3DzJmzwHuQerd8JJ2TeuHfqwKgBt6bK4tk93w3ocBB2vPuKMF3cG",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/search/tweets.json?q=Chicago&count=2",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"search",
+								"tweets.json"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Chicago"
+								},
+								{
+									"key": "count",
+									"value": "2"
+								},
+								{
+									"key": "result_type",
+									"value": "popular",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get tweets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer AAAAAAAAAAAAAAAAAAAAAI4OHgEAAAAAlbk0HSIAqcc3havrrU9j2NeAQ34%3DzJmzwHuQerd8JJ2TeuHfqwKgBt6bK4tk93w3ocBB2vPuKMF3cG",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.twitter.com/1.1/search/tweets.json?q=Chicago Bears",
+							"protocol": "https",
+							"host": [
+								"api",
+								"twitter",
+								"com"
+							],
+							"path": [
+								"1.1",
+								"search",
+								"tweets.json"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Chicago Bears"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "search popular tweets for hashtags",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "9bcc159df5634d6eb6105fa3be25b440",
+						"type": "text"
+					},
+					{
+						"key": "client_secret",
+						"value": "C04c7d05e651417394b0D43610c975F0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://sc37-twittermanagement-sys.us-e2.cloudhub.io/api/twitter/v1/tweets/popular/hashtags?searchCriteria=tiktok",
+					"protocol": "http",
+					"host": [
+						"sc37-twittermanagement-sys",
+						"us-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"api",
+						"twitter",
+						"v1",
+						"tweets",
+						"popular",
+						"hashtags"
+					],
+					"query": [
+						{
+							"key": "searchCriteria",
+							"value": "tiktok"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search tweets",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"The results have the correct number of records in them\", function () {\r",
+							"    //get resultSize query parameter\r",
+							"    var queryParams = {};\r",
+							"    pm.request.url.query.all().forEach((param) => { queryParams[param.key] = param.value});\r",
+							"\r",
+							"    console.log(\"length of results: \" + pm.response.json().results.length)\r",
+							"    if(!queryParams.resultSize) {\r",
+							"        //assert that the number of results is the default value in the environment variable if the query parameter is not given\r",
+							"        pm.expect(pm.response.json().results.length).to.eql(parseInt(pm.environment.get(\"resultSize\")));\r",
+							"    }\r",
+							"    else {\r",
+							"        //assert that the result size is equal to the resultSize parameter when given\r",
+							"         pm.expect(pm.response.json().results.length).to.eql(parseInt(queryParams.resultSize));\r",
+							"    } \r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "client_id",
+						"value": "9bcc159df5634d6eb6105fa3be25b440",
+						"type": "text"
+					},
+					{
+						"key": "client_secret",
+						"value": "C04c7d05e651417394b0D43610c975F0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://sc37-twittermanagement-sys.us-e2.cloudhub.io/api/twitter/v1/tweets?timeLimit=1&resultSize=6&searchCriteria=Chicago",
+					"protocol": "http",
+					"host": [
+						"sc37-twittermanagement-sys",
+						"us-e2",
+						"cloudhub",
+						"io"
+					],
+					"path": [
+						"api",
+						"twitter",
+						"v1",
+						"tweets"
+					],
+					"query": [
+						{
+							"key": "timeLimit",
+							"value": "1"
+						},
+						{
+							"key": "resultSize",
+							"value": "6"
+						},
+						{
+							"key": "searchCriteria",
+							"value": "Chicago"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
