@@ -94,8 +94,8 @@ output application/java
 if(
 		vars.queryParams.resultSize != null 
 		and 
-		(((vars.queryParams.resultSize default 0) as Number >= p('secure::api.parameters.tweetSearchLimit.tweets') as Number)
-		or ((vars.queryParams.resultSize default 0) as Number <= 0))
+		(((vars.queryParams.resultSize default 0) as Number > p('secure::api.parameters.tweetSearchLimit.tweets') as Number)
+		or ((vars.queryParams.resultSize default 0) as Number < 0))
 	)
 		"resultSize must be greater than 0 and less than " ++ p('secure::api.parameters.tweetSearchLimit.tweets')
 		
