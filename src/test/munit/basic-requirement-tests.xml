@@ -19,6 +19,9 @@
 				</munit-tools:with-attributes>
 				<munit-tools:then-return >
 					<munit-tools:payload value="#[MunitTools::getResourceAsString('scaffolder/twitter-responses/eleven_twitter_results.json')]" mediaType="application/json" />
+					<munit-tools:variables >
+						<munit-tools:variable key="currentTime" value='#["2021-10-06T22:25:31Z" as DateTime]' mediaType="application/java" />
+					</munit-tools:variables>
 				</munit-tools:then-return>
 			</munit-tools:mock-when>
 		</munit:behavior>
@@ -30,6 +33,38 @@
         </munit:execution>
         <munit:validation>
             <munit-tools:assert-that expression="#[output application/java --- sizeOf(payload.results)]" is="#[MunitTools::equalTo(10)]" message="The response is too large" doc:name="Assert That - Payload is only 10 records long" />
+        </munit:validation>
+    </munit:test>
+    
+    <munit:test name="tweets-endpoint-only-returns-resultSize-results-when-parameter-is-passed" description="When resultSize parameter is populated, the api only returns that many results">
+        <munit:enable-flow-sources>
+            <munit:enable-flow-source value="social-media-twitter-tweet-management-system-main" />
+            <munit:enable-flow-source value="get:\tweets:social-media-twitter-tweet-management-system-config" />
+        </munit:enable-flow-sources>
+        <munit:behavior >
+			<munit-tools:mock-when doc:name="Mock twitter call and return 11 results" doc:id="324f773c-78de-4ab9-9470-13201204c10c" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="GET" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Request To Twitter For Tweets" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="HTTPS_Twitter_Request_Config" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="${secure::twitter.api.path.searchTweets}" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value="#[MunitTools::getResourceAsString('scaffolder/twitter-responses/eleven_twitter_results.json')]" mediaType="application/json" />
+					<munit-tools:variables >
+						<munit-tools:variable key="currentTime" value='#["2021-10-06T22:25:31Z" as DateTime]' mediaType="application/java" />
+					</munit-tools:variables>
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution>
+            <http:request config-ref="Test_HTTP_Request_Configuration" method="GET" path="/tweets">
+                <http:headers><![CDATA[#[{"Accept":"application/json","client_secret":"","client_id":""}]]]></http:headers>
+                <http:query-params><![CDATA[#[{"timeLimit":"5","searchCriteria":"Chicago Bears", "resultSize": "5"}]]]></http:query-params>
+            </http:request>
+        </munit:execution>
+        <munit:validation>
+            <munit-tools:assert-that expression="#[output application/java --- sizeOf(payload.results)]" is="#[MunitTools::equalTo(5)]" message="The response is too large" doc:name="Assert That - Payload is only 5 records long" />
         </munit:validation>
     </munit:test>
     

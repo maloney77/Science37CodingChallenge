@@ -1,0 +1,5 @@
+{
+    "errorDescription": "Endpoint /endpoint is not implemented",
+    "errorCode": "APIKIT:NOT_IMPLEMENTED",
+    "correlationId": "f9dcf650-26fa-11ec-a623-18c04d04defc"
+}

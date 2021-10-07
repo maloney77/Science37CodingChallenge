@@ -57,23 +57,6 @@ output application/json
                     </ee:variables>
                 </ee:transform>
             </on-error-propagate>
-            <on-error-propagate type="APIKIT:NOT_ACCEPTABLE">
-                <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
-                    <ee:message>
-                        <ee:set-payload><![CDATA[%dw 2.0
-output application/json
----
-{
-	errorDescription: error.description,
-	errorCode: error.errorType.asString,
-	correlationId: correlationId
-}]]></ee:set-payload>
-                    </ee:message>
-                    <ee:variables>
-                        <ee:set-variable variableName="httpStatus"><![CDATA[406]]></ee:set-variable>
-                    </ee:variables>
-                </ee:transform>
-            </on-error-propagate>
             <on-error-propagate type="APIKIT:UNSUPPORTED_MEDIA_TYPE">
                 <ee:transform xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
                     <ee:message>

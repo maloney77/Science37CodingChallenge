@@ -1,0 +1,5 @@
+{
+    "errorDescription": "application/json request is incompatible with this endpoint",
+    "errorCode": "APIKIT:UNSUPPORTED_MEDIA_TYPE",
+    "correlationId": "f9dcf650-26fa-11ec-a623-18c04d04defc"
+}

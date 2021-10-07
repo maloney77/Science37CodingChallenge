@@ -1,0 +1,16 @@
+#%RAML 1.0 DataType
+
+type: object
+properties:
+  errorDescription:
+    type: string
+    description: Human readable detailed description of the error that occurred.
+    example: "Required query parameter searchCriteria not specified"
+  errorCode:
+    type: string
+    description: Machine readable code used to identify the type of error that occurred.
+    example: "APIKIT:BAD_REQUEST"
+  correlationId:
+    type: string
+    description: Unique identifier used to track a specific call to an API.
+    example: "f9dcf650-26fa-11ec-a623-18c04d04defc"

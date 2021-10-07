@@ -1,0 +1,5 @@
+{
+    "errorDescription": "Endpoint /endpoint is not found",
+    "errorCode": "APIKIT:NOT_FOUND",
+    "correlationId": "f9dcf650-26fa-11ec-a623-18c04d04defc"
+}

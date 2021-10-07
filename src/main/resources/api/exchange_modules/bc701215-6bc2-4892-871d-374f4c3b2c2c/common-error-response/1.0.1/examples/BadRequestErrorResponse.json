@@ -1,0 +1,5 @@
+{
+    "errorDescription": "Required query parameter searchCriteria not specified",
+    "errorCode": "APIKIT:BAD_REQUEST",
+    "correlationId": "f9dcf650-26fa-11ec-a623-18c04d04defc"
+}

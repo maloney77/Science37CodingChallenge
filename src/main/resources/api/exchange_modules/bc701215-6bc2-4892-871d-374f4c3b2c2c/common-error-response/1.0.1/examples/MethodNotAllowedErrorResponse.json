@@ -1,0 +1,5 @@
+{
+    "errorDescription": "GET method not allowed on this endpoint",
+    "errorCode": "APIKIT:METHOD_NOT_ALLOWED",
+    "correlationId": "f9dcf650-26fa-11ec-a623-18c04d04defc"
+}

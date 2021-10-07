@@ -6,7 +6,7 @@ baseUri: sc37-twittermanagement-sys.us-e2.cloudhub.io/api/twitter/v1
 description: The Twitter Management System API allows a user to filter through tweets and hashtags while only returning core pieces of important information, for use of social media analysis.
 
 protocols:
-  - HTTPS
+  - HTTP
 version: 1.0
 
 
@@ -17,27 +17,28 @@ traits:
         type: string
       client_secret:
         type: string
+  common-error-responses: !include exchange_modules/bc701215-6bc2-4892-871d-374f4c3b2c2c/common-error-response/1.0.1/common-error-responses.raml
 
 /tweets:
     get:
       description: This endpoint is used to return tweets that contain the given {searchCriteria}, that have been created in the past {timeLimit} hours.
-      is: [ client-id-required]
+      is: [ client-id-required, common-error-responses]
       queryParameters:  
         searchCriteria:
           type: string
-          description: The search string that should be present in each tweet returned.
+          description: The search string that should be present in each tweet returned. This parameter must include at least one alpha numeric character and cannot be blank.
           required: true
           example: "Chicago Bears"
 
         timeLimit:
           type: integer
-          description: The timeLimit parameter filters the search so that only tweets that have been created in the past {timeLimit} hours are returned.\
+          description: The timeLimit parameter filters the search so that only tweets that have been created in the past {timeLimit} hours are returned. This parameter must be greater than 0.
           required: true
-          example: 5
+          example: 3
         
         resultSize:
           type: integer
-          description: The resultSize parameter limits the number of tweets that are returned in the response. This parameter has a maximum of 10 and defaults to the maximum if not given.
+          description: The resultSize parameter limits the number of tweets that are returned in the response. This parameter has a maximum of 10, must be greater than 0, and defaults to the maximum if not given.
           required: false
           example: 10
 
@@ -51,11 +52,11 @@ traits:
     /popular/hashtags:
       get:
         description: This endpoint is used to return a list of unique hashtags used in the top 10 most popular tweets that include the given {searchCriteria}.
-        is: [ client-id-required]
+        is: [ client-id-required, common-error-responses]
         queryParameters:  
           searchCriteria:
             type: string
-            description: The search string that should be present in each tweet that the hashtags belong to.
+            description: The search string that should be present in each tweet that the hashtags belong to. This parameter must include at least one alpha numeric character and cannot be blank.
             required: true
             example: "tiktok"
 

@@ -1,0 +1,5 @@
+{
+    "errorDescription": "An unexpected error occurred, please contact your API representative",
+    "errorCode": "APIKIT:INTERNAL_SERVER_ERROR",
+    "correlationId": "f9dcf650-26fa-11ec-a623-18c04d04defc"
+}

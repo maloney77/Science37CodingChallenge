@@ -42,13 +42,18 @@ if(inputDatetime >= lowerTimeLimit and inputDatetime <= (vars.currentTime >> "GM
 
 fun limitResultSize(arrayOfResults) =
 
-//if the twitter results are less than the max, just return all of the records
-if(sizeOf(arrayOfResults) <= (p('secure::api.parameters.tweetSearchLimit.tweets') as Number))
+//if the resultSize parameter is present and the size of the twitter response is greater than the 
+//requested resultSize, limit it to the resultSize
+if(vars.queryParams.resultSize != null and sizeOf(arrayOfResults) >= (vars.queryParams.resultSize as Number))
+  arrayOfResults[0 to (vars.queryParams.resultSize as Number) - 1]
+
+//else if the twitter results are less than the max, just return all of the records
+else if(sizeOf(arrayOfResults) <= (p('secure::api.parameters.tweetSearchLimit.tweets') as Number))
   arrayOfResults
   
 //otherwise limit the results to the max
 else
-  arrayOfResults[1 to (p('secure::api.parameters.tweetSearchLimit.tweets') as Number)]
+  arrayOfResults[0 to (p('secure::api.parameters.tweetSearchLimit.tweets') as Number -1 )]
 ---
 
 

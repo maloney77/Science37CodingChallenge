@@ -1,0 +1,40 @@
+#%RAML 1.0 Trait
+
+
+responses:
+  400:
+    body:
+      application/json:
+        type:  !include types/errorResponse.raml
+        example: !include examples/BadRequestErrorResponse.json
+        description: Error returned when the request is incorrect in terms of the API specification.
+  404:
+    body:
+      application/json:
+        type:  !include types/errorResponse.raml
+        example: !include examples/NotFoundErrorResponse.json
+        description: Error returned when the specified resource is not found or unavailable.
+  405:
+    body:
+      application/json:
+        type:  !include types/errorResponse.raml
+        example: !include examples/MethodNotAllowedErrorResponse.json
+        description: Error returned when the http method sent in is not applicable for the given API endpoint.
+  415:
+    body:
+      application/json:
+        type:  !include types/errorResponse.raml
+        example: !include examples/UnsupportedMediaTypeErrorResponse.json
+        description: Error returned when the media type of the payload is not the same as the API specification
+  500:
+    body:
+      application/json:
+        type:  !include types/errorResponse.raml
+        example: !include examples/InternalServerErrorResponse.json
+        description: Error returned when an exceptional error occurred
+  501:
+    body:
+      application/json:
+        type:  !include types/errorResponse.raml
+        example: !include examples/NotImplementedErrorResponse.json
+        description: Error returned when the API resource given is not implemented in code.
